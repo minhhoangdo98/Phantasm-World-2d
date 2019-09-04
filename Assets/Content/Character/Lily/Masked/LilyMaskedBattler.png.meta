@@ -1,0 +1,1419 @@
+fileFormatVersion: 2
+guid: 63f7a790f4f3d13429304338a30cfd7e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7203482971985558790
+    second: LilyMaskedBattler_0
+  - first:
+      213: 2438135607998501407
+    second: LilyMaskedBattler_1
+  - first:
+      213: 2083668910572823730
+    second: LilyMaskedBattler_2
+  - first:
+      213: -6206352157214289672
+    second: LilyMaskedBattler_3
+  - first:
+      213: -1176035641273488628
+    second: LilyMaskedBattler_4
+  - first:
+      213: -6244813040219959373
+    second: LilyMaskedBattler_5
+  - first:
+      213: 5564387659032919188
+    second: LilyMaskedBattler_6
+  - first:
+      213: 3634616571089774164
+    second: LilyMaskedBattler_7
+  - first:
+      213: -2753740330852563902
+    second: LilyMaskedBattler_8
+  - first:
+      213: 7831759695143249040
+    second: LilyMaskedBattler_9
+  - first:
+      213: -2657746206425188353
+    second: LilyMaskedBattler_10
+  - first:
+      213: 2592186032197189891
+    second: LilyMaskedBattler_11
+  - first:
+      213: -3946032605268145780
+    second: LilyMaskedBattler_12
+  - first:
+      213: -5595174602640994461
+    second: LilyMaskedBattler_13
+  - first:
+      213: 1647129696406342917
+    second: LilyMaskedBattler_14
+  - first:
+      213: 6167908643201549571
+    second: LilyMaskedBattler_15
+  - first:
+      213: 8021726631889691051
+    second: LilyMaskedBattler_16
+  - first:
+      213: -2567294573404368054
+    second: LilyMaskedBattler_17
+  - first:
+      213: -6328334767914007273
+    second: LilyMaskedBattler_18
+  - first:
+      213: 403483983167531928
+    second: LilyMaskedBattler_19
+  - first:
+      213: -8218135099763055544
+    second: LilyMaskedBattler_20
+  - first:
+      213: 7435620899506365915
+    second: LilyMaskedBattler_21
+  - first:
+      213: 5438296584773078589
+    second: LilyMaskedBattler_22
+  - first:
+      213: 8159539584848525317
+    second: LilyMaskedBattler_23
+  - first:
+      213: 4982857944845432880
+    second: LilyMaskedBattler_24
+  - first:
+      213: -555985499383438017
+    second: LilyMaskedBattler_25
+  - first:
+      213: -1338109607030975173
+    second: LilyMaskedBattler_26
+  - first:
+      213: 727000376818209069
+    second: LilyMaskedBattler_27
+  - first:
+      213: 8230062999829672947
+    second: LilyMaskedBattler_28
+  - first:
+      213: -8525443303889767309
+    second: LilyMaskedBattler_29
+  - first:
+      213: 1909418391769296668
+    second: LilyMaskedBattler_30
+  - first:
+      213: -5162733428322475816
+    second: LilyMaskedBattler_31
+  - first:
+      213: -1823330239462964753
+    second: LilyMaskedBattler_32
+  - first:
+      213: -6370229169050709404
+    second: LilyMaskedBattler_33
+  - first:
+      213: 2777700208970670624
+    second: LilyMaskedBattler_34
+  - first:
+      213: 3736889032355480999
+    second: LilyMaskedBattler_35
+  - first:
+      213: 2974030999771522109
+    second: LilyMaskedBattler_36
+  - first:
+      213: 2481636596833366574
+    second: LilyMaskedBattler_37
+  - first:
+      213: 5717545235355411750
+    second: LilyMaskedBattler_38
+  - first:
+      213: -7724131170286802075
+    second: LilyMaskedBattler_39
+  - first:
+      213: 7018559854282614865
+    second: LilyMaskedBattler_40
+  - first:
+      213: -7966483744751081005
+    second: LilyMaskedBattler_41
+  - first:
+      213: -2301297594304027913
+    second: LilyMaskedBattler_42
+  - first:
+      213: -7599256899563079722
+    second: LilyMaskedBattler_43
+  - first:
+      213: -3416924120282405182
+    second: LilyMaskedBattler_44
+  - first:
+      213: 9139710762738542612
+    second: LilyMaskedBattler_45
+  - first:
+      213: 3187210813410525752
+    second: LilyMaskedBattler_46
+  - first:
+      213: 7541901722391462170
+    second: LilyMaskedBattler_47
+  - first:
+      213: -4141367814477881351
+    second: LilyMaskedBattler_48
+  - first:
+      213: 2661831054864003317
+    second: LilyMaskedBattler_49
+  - first:
+      213: -8953080022287924324
+    second: LilyMaskedBattler_50
+  - first:
+      213: -9145533660609956527
+    second: LilyMaskedBattler_51
+  - first:
+      213: 8276864991683471071
+    second: LilyMaskedBattler_52
+  - first:
+      213: -7675967414294390779
+    second: LilyMaskedBattler_53
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 53
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LilyMaskedBattler_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 320
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75cd16ad5bda6464bb4e724f92e21ad7
+      internalID: 7203482971985558790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2d164f768e35142832732de6c814b1
+      internalID: 2438135607998501407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 55
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687c8b1397d642446b83cf4bc2bafee9
+      internalID: 2083668910572823730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 320
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814d601eef1fc114fa8e6bc1ee62546e
+      internalID: -6206352157214289672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_4
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 320
+        width: 57
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e4c1e6bc9b3fc40b08108190061e9e
+      internalID: -1176035641273488628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 320
+        width: 49
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d546407f270ec54469d595bc8c3282be
+      internalID: -6244813040219959373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_6
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 320
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fbf1ed6338c184f9b29b3e1b970b95
+      internalID: 5564387659032919188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_7
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 320
+        width: 50
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d8ba25cbda33b45ae1ce596f68a078
+      internalID: 3634616571089774164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_8
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 320
+        width: 50
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49db3443b48420c47a7afc06a6dbbba1
+      internalID: -2753740330852563902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_9
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 256
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e64d996c3dd6543b360204e56107c9
+      internalID: 7831759695143249040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_10
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 256
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8daaecaa3e718f46829e81f9be0819f
+      internalID: -2657746206425188353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_11
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 256
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cfe984e3283f242aa4c63353824a8f
+      internalID: 2592186032197189891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_12
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 256
+        width: 49
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57086cfa71493044bc8115964d8119e
+      internalID: -3946032605268145780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_13
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 256
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbd27f5c68c06f43834a987eac0adbb
+      internalID: -5595174602640994461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_14
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 256
+        width: 48
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643173a3db792654a8423ca581704ea6
+      internalID: 1647129696406342917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_15
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 256
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4157ad30e362e3439515d2f0e78e5fe
+      internalID: 6167908643201549571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_16
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 257
+        width: 48
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e4f236f74544442b61ed1f71877cd3
+      internalID: 8021726631889691051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_17
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 257
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1789efb73fd8a6641a17da9a9aa48be6
+      internalID: -2567294573404368054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 192
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b7b9370c8f5bd4daf82ab8dfd54b7e
+      internalID: -6328334767914007273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_19
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 192
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ebd7a8d14112c4fb43678594670e84
+      internalID: 403483983167531928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_20
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 192
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbfbde997a8392478642a63c06266f7
+      internalID: -8218135099763055544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_21
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 192
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51965ad3430d9f2439543d587eff4812
+      internalID: 7435620899506365915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_22
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 192
+        width: 51
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021bf2dd3fb699443b5f0a645df56338
+      internalID: 5438296584773078589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_23
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 192
+        width: 51
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4faf10ac42b6e54bb7209918b7afd4f
+      internalID: 8159539584848525317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_24
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 192
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0468e4751543d894883b1089cec3fb47
+      internalID: 4982857944845432880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_25
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 192
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348854b2d4900b04abc8697180d46c69
+      internalID: -555985499383438017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_26
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 192
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac807ec294ab434593e88ea52ff05c0
+      internalID: -1338109607030975173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_27
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 128
+        width: 49
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b81a6fd9264344e85d333b0bc77e85
+      internalID: 727000376818209069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_28
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 128
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c19f818f7e1ee47b63002dc999f65c
+      internalID: 8230062999829672947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_29
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 128
+        width: 49
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c72ff0e75298644984ee9e46bacfe5d
+      internalID: -8525443303889767309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_30
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 128
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e203cdce0952c6e4ab23f6b5b2048a8b
+      internalID: 1909418391769296668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_31
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 128
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aeea292ac406fa4cab5413468dc964e
+      internalID: -5162733428322475816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_32
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 128
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6f82502e936fb40a93b8a088cffaf1
+      internalID: -1823330239462964753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_33
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 128
+        width: 49
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8820c4b0bbabd47a3f2b440a706340
+      internalID: -6370229169050709404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_34
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 128
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1a7d7f2d9b2a943a6184fe1a087f33
+      internalID: 2777700208970670624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_35
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 128
+        width: 48
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76374325c5645bb489443e3a2ab001bc
+      internalID: 3736889032355480999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_36
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 64
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11ffd3f2f774ae4f910c433a0098394
+      internalID: 2974030999771522109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_37
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 64
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5977f5cf4c4726147a3541972e0ac18a
+      internalID: 2481636596833366574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_38
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 64
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b220395f9c7ba3348950f759586fc92e
+      internalID: 5717545235355411750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_39
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 64
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7728dfd7eea364bb8d794a4341e919
+      internalID: -7724131170286802075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_40
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 64
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188796f19448d1844a6074ceb0b27f15
+      internalID: 7018559854282614865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_41
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 65
+        width: 49
+        height: 62
+      alignment: 9
+      pivot: {x: 0.48484895, y: 0.47567257}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995a5718767ffdf4da095608339ef0ae
+      internalID: -7966483744751081005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_42
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 64
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200a9697683b23b4dbd79a816061ea59
+      internalID: -2301297594304027913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_43
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 64
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21827381840cdc547b6970829379a44c
+      internalID: -7599256899563079722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_44
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 64
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e262d36f9b4f0ac468427b1c3e5af076
+      internalID: -3416924120282405182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_45
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a19bf800935694c900e94221e4fdbf
+      internalID: 9139710762738542612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_46
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 52
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244617ad579dae64ca8182aab921bac2
+      internalID: 3187210813410525752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_47
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 52
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73eb073ee43f39408c5a22181a1d250
+      internalID: 7541901722391462170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_48
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874ab01aa844995498ac7cea88860d39
+      internalID: -4141367814477881351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_49
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b294a64e6f59b4149a8b22899bf942d3
+      internalID: 2661831054864003317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_50
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e03a9d6805113a48be8a54b771a973b
+      internalID: -8953080022287924324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_51
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f734d60141f75434bba75e85794ae6c6
+      internalID: -9145533660609956527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_52
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 2
+        width: 49
+        height: 62
+      alignment: 9
+      pivot: {x: 0.48484895, y: 0.47567257}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380e8990359f92a4283db43bc1f7a4e9
+      internalID: 8276864991683471071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyMaskedBattler_53
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9404a3dcf1b14e4c97652c88063e834
+      internalID: -7675967414294390779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b2f2bd0113792744189c61633fe3d4f3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
