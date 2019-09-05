@@ -11,14 +11,6 @@ public class NpcController : MonoBehaviour
     public Main main;
     public GameObject face;
 
-    private void Start()
-    {
-        lily = gameObject.GetComponent<Lily>();
-        gideon = gameObject.GetComponent<Gideon>();
-        ruth = gameObject.GetComponent<Ruth>();
-        main = gameObject.GetComponent<Main>();
-    }
-
     public void ThayDoiAvatar(Texture faceImage)
     {
         face.GetComponent<RawImage>().texture = faceImage;

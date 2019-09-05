@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EventController : MonoBehaviour
 {
@@ -104,8 +105,45 @@ public class EventController : MonoBehaviour
         switch (gc.eve.story)
         {
             case 0:
-                
+                Intro();
                 break;           
+        }
+    }
+
+    private void Intro()
+    {
+        switch (gc.eve.textNum)
+        {
+            case 0:
+                gc.music.musicSound.Stop();
+                StartCoroutine(ChuyenCanh(null, gc.backGround.hospital, false, false));
+                break;
+            case 1:
+                gc.menu.eventCanvas.SetActive(true);
+                gc.menu.hoiThoaiPanel.SetActive(true);
+                gc.eve.luaChon.SetActive(false);
+                gc.eve.facePanel.SetActive(false);              
+                gc.eve.talk.text = "...";
+                break;
+            case 2:
+                npc.ThayDoiAvatar(npc.main.confused);
+                gc.eve.facePanel.SetActive(true);
+                gc.eve.ten.text = gc.stat.Ten;
+                gc.eve.talk.text = "Wh...where am I? Hospital?";
+                break;
+            case 3:
+                gc.eve.talk.text = "Ah right! I remember!";
+                break;
+            case 4:
+                npc.ThayDoiAvatar(npc.main.worry);
+                gc.eve.talk.text = "I've got beaten...";
+                break;
+            case 5:
+                gc.eve.textNum = 0;
+                SceneManager.LoadScene(3, LoadSceneMode.Single);
+                gc.menu.hoiThoaiPanel.SetActive(false);
+                gc.menu.eventCanvas.SetActive(false);
+                break;
         }
     }
     #endregion
