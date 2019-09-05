@@ -144,4 +144,82 @@ public class GameController : MonoBehaviour
     }
     #endregion
 
+    #region HieuUng
+    public void TaoHieuUng(GameObject hieuUng, float lifeTime, Vector3 pos)
+    {
+        GameObject par = Instantiate(hieuUng, pos, Quaternion.identity);
+        Destroy(par, lifeTime);
+    }
+    #endregion
+
+    #region screenEvent
+    public IEnumerator FadeOutScreenWhite()//Lam man hinh trang dan
+    {
+        yield return new WaitForSeconds(0.5f);
+        manHinh.fadeOutWhite.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        manHinh.whiteScreen.SetActive(true);
+        manHinh.fadeOutWhite.SetActive(false);
+    }
+
+    public IEnumerator FadeInScreenWhite()//lam man hinh giam do trang xuong
+    {
+        yield return new WaitForSeconds(0.5f);
+        manHinh.whiteScreen.SetActive(false);
+        manHinh.fadeInWhite.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        manHinh.fadeInWhite.SetActive(false);
+    }
+
+    public IEnumerator FadeOutScreenblack()//Lam man hinh toi dan
+    {
+        yield return new WaitForSeconds(0.5f);
+        manHinh.fadeOut.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        manHinh.blackScreen.SetActive(true);
+        manHinh.fadeOut.SetActive(false);
+    }
+
+    public IEnumerator FadeInScreenblack()//lam man hinh sang len
+    {
+        yield return new WaitForSeconds(0.5f);
+        manHinh.blackScreen.SetActive(false);
+        manHinh.fadeIn.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        manHinh.fadeIn.SetActive(false);
+    }
+    #endregion
+
+    #region SuKien 
+    public void BtnEvent()
+    {
+        switch (eve.story)
+        {
+            case 0:
+                eve.textNum = 0;
+                gameObject.GetComponent<EventController>().PlayStory();
+                break;
+            case 1:
+                if (stat.Str >= 2 && stat.Intl >= 2)
+                {
+                    eve.textNum = 0;
+                    gameObject.GetComponent<EventController>().PlayStory();
+                }
+                else
+                {
+                    menu.mBPanel.GetComponent<MessBox>().textThongBao.text = "Chưa đủ điều kiện để mở sự kiện này. Hãy tăng chỉ số lên!!";
+                    menu.mBPanel.SetActive(true);
+                }
+                break;
+                
+        }
+    }
+
+    public void BtnMission()
+    {
+        
+    }
+
+    #endregion
+
 }
