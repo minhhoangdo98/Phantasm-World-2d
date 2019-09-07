@@ -22,6 +22,7 @@ TagManager:
   - Enemy
   - Boss
   - ButtonTextRandom
+  - Tuong
   layers:
   - Default
   - TransparentFX

@@ -31,10 +31,10 @@ public class PlayerController : MonoBehaviour
         traiPhai = true;
         lenXuong = false;
         defaultSpeed = speed;//speed ban dau
-        hp = PlayerPrefs.GetInt("str") * 2;//chi so hp dua tren chi so str
+        hp = PlayerPrefs.GetInt("currentHp" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString());//chi so hp dua tren chi so str
         //thanh mau
         hpSlider.minValue = 0;
-        hpSlider.maxValue = hp;
+        hpSlider.maxValue = PlayerPrefs.GetInt("maxHp" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString());
         hpSlider.value = hp;
     }
 

@@ -7,7 +7,7 @@ public class EnemyController : MonoBehaviour
 {
     public int str, hp;
     public float speed = 150f, maxSpeed = 3, jumpPow = 350f, move = 0;
-    public bool grounded = true, faceRight = true, attacktrigger1 = false, takeDam = false, death = false, attacktrigger2 = false, attacktrigger3 = false, attacktrigger4 = false, flipable = true;
+    public bool grounded = true, faceRight = true, attacktrigger1 = false, takeDam = false, death = false, attacktrigger2 = false, attacktrigger3 = false, attacktrigger4 = false, flipable = true, jumpable = true, backMove = false, invisible = false;
     public Rigidbody2D r2;
     public Animator anim;
     private AudioSource audioSource;
@@ -38,6 +38,7 @@ public class EnemyController : MonoBehaviour
     {
         if (diChuyen)
         {
+            r2.AddForce(Vector2.right * speed * move);//di chuyen
             //Ham gioi han toc do di chuyen
             if (r2.velocity.x > maxSpeed) //Gioi han toc do di ve ben phais
                 r2.velocity = new Vector2(maxSpeed, r2.velocity.y);
@@ -76,16 +77,26 @@ public class EnemyController : MonoBehaviour
     public void Flip() // Chuyen huong nhan vat
     {
         faceRight = !faceRight;
-        gameObject.GetComponent<Transform>().localScale = new Vector3(-gameObject.GetComponent<Transform>().localScale.x, 1, 1);
+        gameObject.GetComponent<SpriteRenderer>().flipX = !gameObject.GetComponent<SpriteRenderer>().flipX;
+    }
+
+    public IEnumerator JumpDelay()
+    {
+        jumpable = false;
+        yield return new WaitForSeconds(1.5f);
+        jumpable = true;
     }
 
     #region NhanSatThuong
     public void TakeDamage(int damageAmount)//Nhan sat thuong
     {
-        takeDam = true;
-        diChuyen = false;
-        hp -= damageAmount;
-        StartCoroutine(TakeDam());
+        if(!invisible)
+        {
+            takeDam = true;
+            diChuyen = false;
+            hp -= damageAmount;
+            StartCoroutine(TakeDam());
+        }
     }
 
     IEnumerator TakeDam()

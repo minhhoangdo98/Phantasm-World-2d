@@ -85,6 +85,12 @@
     <Compile Include="Assets\Content\RainDropEffect2\Scripts\RainBehaviours\StaticRain\StaticRainVariables.cs" />
     <Compile Include="Assets\Controllers\Character\Enemy\EnemyController.cs" />
     <Compile Include="Assets\Controllers\Character\Enemy\EnemyGroundCheck.cs" />
+    <Compile Include="Assets\Controllers\Character\Enemy\LilyMasked\LilyMaskedController.cs" />
+    <Compile Include="Assets\Controllers\Character\Enemy\LilyMasked\LilyMaskedDown.cs" />
+    <Compile Include="Assets\Controllers\Character\Enemy\LilyMasked\LilyMaskedLeft.cs" />
+    <Compile Include="Assets\Controllers\Character\Enemy\LilyMasked\LilyMaskedLeftLong.cs" />
+    <Compile Include="Assets\Controllers\Character\Enemy\LilyMasked\LilyMaskedRight.cs" />
+    <Compile Include="Assets\Controllers\Character\Enemy\LilyMasked\LilyMaskedRightLong.cs" />
     <Compile Include="Assets\Controllers\Character\NpcController.cs" />
     <Compile Include="Assets\Controllers\Character\Player\BetterJumping.cs" />
     <Compile Include="Assets\Controllers\Character\Player\GroundCheck.cs" />
@@ -111,6 +117,8 @@
     <Compile Include="Assets\Models\PlayerStat.cs" />
     <Compile Include="Assets\Models\TaiKhoan.cs" />
     <Compile Include="Assets\Models\ThoiGian.cs" />
+    <Compile Include="Assets\Scripts\EnemyEffect\EnemyDealDamageTrigger.cs" />
+    <Compile Include="Assets\Scripts\EnemyEffect\EnemyKi.cs" />
     <Compile Include="Assets\Scripts\IntroToTittle.cs" />
     <Compile Include="Assets\Scripts\LoadingText.cs" />
     <Compile Include="Assets\Scripts\MiniGame\ButtonRandomChar.cs" />

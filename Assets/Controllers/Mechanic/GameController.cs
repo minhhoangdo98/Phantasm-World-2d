@@ -57,6 +57,7 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         stat = model.GetComponent<PlayerStat>();
         stat.LoadStat(PlayerPrefs.GetInt("idTKCurrent"));
+        gameObject.GetComponent<EventController>().LoadCotTruyen();
         yield return new WaitForSeconds(0.1f);
         loadComplete = true;
         manHinh.loadingScreen.SetActive(false);

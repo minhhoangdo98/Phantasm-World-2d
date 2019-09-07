@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Views/MyRoom.unity
+- path: Assets/Views/StageIntro.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

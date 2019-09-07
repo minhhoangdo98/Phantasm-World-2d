@@ -14,22 +14,21 @@ public class EnemyGroundCheck : MonoBehaviour
     }
 
 
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.isTrigger == false)
+        if (collision.collider.tag == "Dat")
             enemy.grounded = true;
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.isTrigger == false || collision.CompareTag("Dat"))
+        if (collision.collider.tag == "Dat")
             enemy.grounded = true;
-
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.isTrigger == false || collision.CompareTag("Dat"))
+        if (collision.collider.tag == "Dat")
             enemy.grounded = false;
     }
 }
