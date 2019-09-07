@@ -66,14 +66,25 @@ public class EventController : MonoBehaviour
         gc.menu.eventCanvas.SetActive(false);
     }
 
-    public IEnumerator ChuyenCanh(AudioClip nhacNen, GameObject background, bool activeMenuBackground, bool activeMenu)//Chuyen khung hinh
+    public IEnumerator ChuyenCanh(AudioClip nhacNen, GameObject background, bool activeMenuBackground, bool activeMenu, bool whiteScreen)//Chuyen khung hinh
     {
         enableNext = false;
         yield return new WaitForSeconds(0.5f);
-        gc.manHinh.fadeOut.SetActive(true);
+        if(whiteScreen)
+            gc.manHinh.fadeOutWhite.SetActive(true);
+        else
+            gc.manHinh.fadeOut.SetActive(true);
         yield return new WaitForSeconds(1f);
-        gc.manHinh.blackScreen.SetActive(true);
-        gc.manHinh.fadeOut.SetActive(false);
+        if(whiteScreen)
+        {
+            gc.manHinh.whiteScreen.SetActive(true);
+            gc.manHinh.fadeOutWhite.SetActive(false);
+        }
+        else
+        {
+            gc.manHinh.blackScreen.SetActive(true);
+            gc.manHinh.fadeOut.SetActive(false);
+        }       
         gc.menu.menuCanvas.SetActive(activeMenu);
         gc.menuBackground = activeMenuBackground;
         if (background != null)
@@ -90,12 +101,23 @@ public class EventController : MonoBehaviour
         {
             gc.ThayDoiNhacNen(nhacNen);
         }
-        gc.manHinh.blackScreen.SetActive(false);
-        gc.manHinh.fadeIn.SetActive(true);
+        if(whiteScreen)
+        {
+            gc.manHinh.whiteScreen.SetActive(false);
+            gc.manHinh.fadeInWhite.SetActive(true);
+        }
+        else
+        {
+            gc.manHinh.blackScreen.SetActive(false);
+            gc.manHinh.fadeIn.SetActive(true);
+        }
         gc.eve.textNum++;
         PlayStory();
         yield return new WaitForSeconds(1f);
-        gc.manHinh.fadeIn.SetActive(false);
+        if (whiteScreen)
+            gc.manHinh.fadeInWhite.SetActive(false);
+        else
+            gc.manHinh.fadeIn.SetActive(false);
     }
 
     #region event
@@ -116,7 +138,7 @@ public class EventController : MonoBehaviour
         {
             case 0:
                 gc.music.musicSound.Stop();
-                StartCoroutine(ChuyenCanh(null, gc.backGround.hospital, false, false));
+                StartCoroutine(ChuyenCanh(null, gc.backGround.hospital, false, false, false));
                 break;
             case 1:
                 gc.menu.eventCanvas.SetActive(true);
@@ -129,16 +151,57 @@ public class EventController : MonoBehaviour
                 npc.ThayDoiAvatar(npc.main.confused);
                 gc.eve.facePanel.SetActive(true);
                 gc.eve.ten.text = gc.stat.Ten;
-                gc.eve.talk.text = "Wh...where am I? Hospital?";
+                gc.eve.talk.text = "[Wh...where am I? Hospital?]";
                 break;
             case 3:
-                gc.eve.talk.text = "Ah right! I remember!";
+                npc.ThayDoiAvatar(npc.gideon.normal);
+                gc.eve.ten.text = "???";
+                gc.eve.talk.text = "[You finally awake.]";
                 break;
             case 4:
                 npc.ThayDoiAvatar(npc.main.worry);
-                gc.eve.talk.text = "I've got beaten...";
+                gc.eve.ten.text = gc.stat.Ten;
+                gc.eve.talk.text = "[Gildeon! What happen?]";
                 break;
             case 5:
+                npc.ThayDoiAvatar(npc.gideon.normal);
+                gc.eve.ten.text = "Gildeon";
+                gc.eve.talk.text = "[Hmm... You don't remember? Are you okay?]";
+                StartCoroutine(ChuyenCanh(null, null, false, false, true));
+                break;
+            case 6:
+                npc.ThayDoiAvatar(npc.main.worry);
+                gc.eve.ten.text = gc.stat.Ten;
+                gc.eve.talk.text = "[Remember what?]";
+                break;
+            case 7:
+                npc.ThayDoiAvatar(npc.main.doubt);
+                gc.eve.talk.text = "[Ah! I-I see...]";
+                break;
+            case 8:
+                npc.ThayDoiAvatar(npc.gideon.normal);
+                gc.eve.ten.text = "Gildeon";
+                gc.eve.talk.text = "[So that's it?]";
+                break;
+            case 9:
+                npc.ThayDoiAvatar(npc.main.angry);
+                gc.eve.ten.text = gc.stat.Ten;
+                gc.eve.talk.text = "[Yes, it's her and I've been attacked! but this, I mean, I don't believe it, that not right! I-I can't-]";
+                break;
+            case 10:
+                npc.ThayDoiAvatar(npc.gideon.worry);
+                gc.eve.ten.text = "Gildeon";
+                gc.eve.talk.text = "[Calm down bro! There no need to rush.]";
+                break;
+            case 11:
+                npc.ThayDoiAvatar(npc.main.normal);
+                gc.eve.ten.text = gc.stat.Ten;
+                gc.eve.talk.text = "[Sorry]";
+                break;
+            case 19:
+                StartCoroutine(ChuyenCanh(null, null, false, false, true));
+                break;
+            case 20:
                 gc.eve.textNum = 0;
                 SceneManager.LoadScene(3, LoadSceneMode.Single);
                 gc.menu.hoiThoaiPanel.SetActive(false);

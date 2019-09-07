@@ -192,8 +192,8 @@ public class SkillController : MonoBehaviour
             {
                 Vector3 pos = new Vector3(transform.position.x + 1.5f, transform.position.y + 1.2f);//hieu ung dan
                 GameObject bul = Instantiate(bullet, pos, Quaternion.identity) as GameObject;//tao dan ban ra
-                bul.transform.Rotate(0, 0, transform.rotation.z + i * 5, Space.Self);//Xoay chieu dan               
-                Destroy(bul, 1.8f);
+                bul.transform.Rotate(0, 0, transform.rotation.z + i * 10, Space.Self);//Xoay chieu dan               
+                Destroy(bul, 0.25f);
             }
         }
         else//danh ben trai
@@ -202,8 +202,8 @@ public class SkillController : MonoBehaviour
             {
                 Vector3 pos = new Vector3(transform.position.x - 1.5f, transform.position.y + 1.2f);//hieu ung dan
                 GameObject bul = Instantiate(bullet, pos, Quaternion.identity) as GameObject;//tao dan ban ra
-                bul.transform.Rotate(0, 0, transform.rotation.z + i * 5, Space.Self);
-                Destroy(bul, 1.8f);
+                bul.transform.Rotate(0, 0, transform.rotation.z + i * -10, Space.Self);
+                Destroy(bul, 0.25f);
             }
         }
         yield return new WaitForSeconds(0.3f);
