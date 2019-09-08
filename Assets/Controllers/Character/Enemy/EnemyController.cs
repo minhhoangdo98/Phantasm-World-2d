@@ -87,6 +87,19 @@ public class EnemyController : MonoBehaviour
         jumpable = true;
     }
 
+    public IEnumerator BackStep(int mov)
+    {
+        flipable = false;
+        backMove = true;
+        speed = 300f;
+        move = mov;
+        yield return new WaitForSeconds(0.5f);
+        flipable = true;
+        backMove = false;
+        speed = 150f;
+        move = 0;
+    }
+
     #region NhanSatThuong
     public void TakeDamage(int damageAmount)//Nhan sat thuong
     {

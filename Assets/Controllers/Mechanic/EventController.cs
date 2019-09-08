@@ -138,7 +138,7 @@ public class EventController : MonoBehaviour
         {
             case 0:
                 gc.music.musicSound.Stop();
-                StartCoroutine(ChuyenCanh(null, gc.backGround.hospital, false, false, false));
+                StartCoroutine(ChuyenCanh(gc.music.mysterial, gc.backGround.hospital, false, false, false));
                 break;
             case 1:
                 gc.menu.eventCanvas.SetActive(true);
@@ -161,13 +161,12 @@ public class EventController : MonoBehaviour
             case 4:
                 npc.ThayDoiAvatar(npc.main.worry);
                 gc.eve.ten.text = gc.stat.Ten;
-                gc.eve.talk.text = "[Gildeon! What happen?]";
+                gc.eve.talk.text = "[Gildeon! What happened?]";
                 break;
             case 5:
                 npc.ThayDoiAvatar(npc.gideon.normal);
                 gc.eve.ten.text = "Gildeon";
-                gc.eve.talk.text = "[Hmm... You don't remember? Are you okay?]";
-                StartCoroutine(ChuyenCanh(null, null, false, false, true));
+                gc.eve.talk.text = "[Hmm... You don't remember anything? Are you okay?]";
                 break;
             case 6:
                 npc.ThayDoiAvatar(npc.main.worry);
@@ -181,7 +180,7 @@ public class EventController : MonoBehaviour
             case 8:
                 npc.ThayDoiAvatar(npc.gideon.normal);
                 gc.eve.ten.text = "Gildeon";
-                gc.eve.talk.text = "[So that's it?]";
+                gc.eve.talk.text = "[You rushed to that place without telling anyone and then the police found you unconscious, what happened after all? Did you find the culprit?]";
                 break;
             case 9:
                 npc.ThayDoiAvatar(npc.main.angry);
@@ -196,12 +195,22 @@ public class EventController : MonoBehaviour
             case 11:
                 npc.ThayDoiAvatar(npc.main.normal);
                 gc.eve.ten.text = gc.stat.Ten;
-                gc.eve.talk.text = "[Sorry]";
+                gc.eve.talk.text = "[Sorry, It happened so quick!]";
                 break;
-            case 19:
+            case 12:
+                npc.ThayDoiAvatar(npc.gideon.smile);
+                gc.eve.ten.text = "Gildeon";
+                gc.eve.talk.text = "[Tell me more!]";
+                break;
+            case 13:
+                npc.ThayDoiAvatar(npc.main.normal);
+                gc.eve.ten.text = gc.stat.Ten;
+                gc.eve.talk.text = "[As you know, last night when that accident happened, I was there and...]";
+                break;
+            case 14:
                 StartCoroutine(ChuyenCanh(null, null, false, false, true));
                 break;
-            case 20:
+            case 15:
                 gc.eve.textNum = 0;
                 SceneManager.LoadScene(3, LoadSceneMode.Single);
                 gc.menu.hoiThoaiPanel.SetActive(false);

@@ -7,7 +7,7 @@ public class LilyMaskedController : MonoBehaviour
     [SerializeField]
     private EnemyController lilyMasked;
     public bool skillKi = true;
-    public GameObject ki;
+    public GameObject ki, thunderBall;
 
     private void Update()
     {
@@ -24,16 +24,21 @@ public class LilyMaskedController : MonoBehaviour
         if(lilyMasked.grounded)
             if (lilyMasked.GetComponent<EnemyController>().faceRight)//danh ben phai
             {
-                Vector3 pos = new Vector3(lilyMasked.transform.position.x + 1.5f, lilyMasked.transform.position.y);
-                GameObject k = Instantiate(ki, pos, Quaternion.identity, lilyMasked.transform) as GameObject;
-                Destroy(k, 2);
+                Vector3 pos = new Vector3(lilyMasked.transform.position.x + 1, lilyMasked.transform.position.y);
+                GameObject k1 = Instantiate(thunderBall, pos, Quaternion.identity, lilyMasked.transform) as GameObject;
+                GameObject k2 = Instantiate(thunderBall, pos, Quaternion.identity, lilyMasked.transform) as GameObject;
+                k2.transform.Rotate(0, 0, transform.rotation.z - 30, Space.Self);
+                Destroy(k1, 2);
+                Destroy(k2, 2);
             }
             else//danh ben trai
             {
-                Vector3 pos = new Vector3(lilyMasked.transform.position.x - 1.5f, lilyMasked.transform.position.y);
-                GameObject k = Instantiate(ki, pos, Quaternion.identity, lilyMasked.transform) as GameObject;
-                k.transform.localScale = new Vector2(-1, 1);
-                Destroy(k, 2);
+                Vector3 pos = new Vector3(lilyMasked.transform.position.x - 1, lilyMasked.transform.position.y);
+                GameObject k1 = Instantiate(thunderBall, pos, Quaternion.identity, lilyMasked.transform) as GameObject;
+                GameObject k2 = Instantiate(thunderBall, pos, Quaternion.identity, lilyMasked.transform) as GameObject;
+                k2.transform.Rotate(0, 0, transform.rotation.z + 30, Space.Self);
+                Destroy(k1, 2);
+                Destroy(k2, 2);
             }
         else
             for (int i = 0; i < 5; i++)
@@ -53,4 +58,5 @@ public class LilyMaskedController : MonoBehaviour
         lilyMasked.GetComponent<EnemyController>().attacktrigger2 = false;
         skillKi = true;
     }
+
 }
