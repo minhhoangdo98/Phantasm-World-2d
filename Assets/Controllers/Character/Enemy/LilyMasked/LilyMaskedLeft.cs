@@ -10,7 +10,7 @@ public class LilyMaskedLeft : MonoBehaviour
     {
         if (collision.tag == "Player" && lilyMasked.GetComponent<EnemyController>().diChuyen && !lilyMasked.GetComponent<EnemyController>().backMove)
         {
-            StartCoroutine(BackStep());
+            StartCoroutine(lilyMasked.GetComponent<EnemyController>().BackStep(1));
         }
         if (collision.tag == "PlayerBullet" && lilyMasked.GetComponent<EnemyController>().diChuyen && lilyMasked.GetComponent<EnemyController>().jumpable)
         {
@@ -24,17 +24,5 @@ public class LilyMaskedLeft : MonoBehaviour
             StartCoroutine(lilyMasked.GetComponent<EnemyController>().JumpDelay());
         }
     }
-
-    IEnumerator BackStep()
-    {
-        lilyMasked.GetComponent<EnemyController>().flipable = false;
-        lilyMasked.GetComponent<EnemyController>().backMove = true;
-        lilyMasked.GetComponent<EnemyController>().speed = 300f;
-        lilyMasked.GetComponent<EnemyController>().move = 1;
-        yield return new WaitForSeconds(0.5f);
-        lilyMasked.GetComponent<EnemyController>().flipable = true;
-        lilyMasked.GetComponent<EnemyController>().backMove = false;
-        lilyMasked.GetComponent<EnemyController>().speed = 150f;
-        lilyMasked.GetComponent<EnemyController>().move = 0;
-    }
+   
 }

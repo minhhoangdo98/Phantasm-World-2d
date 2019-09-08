@@ -144,6 +144,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 0}
   damageAmount: 0
+  datEffect: {fileID: 8371440291070150027, guid: 953542358886cfc4698692e59d38cab9,
+    type: 3}
+  effectOnDat: 1
+  posX: 0
+  posY: 2.5
 --- !u!82 &737232178227944958
 AudioSource:
   m_ObjectHideFlags: 0

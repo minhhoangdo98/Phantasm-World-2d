@@ -89,8 +89,10 @@
     <Compile Include="Assets\Controllers\Character\Enemy\LilyMasked\LilyMaskedDown.cs" />
     <Compile Include="Assets\Controllers\Character\Enemy\LilyMasked\LilyMaskedLeft.cs" />
     <Compile Include="Assets\Controllers\Character\Enemy\LilyMasked\LilyMaskedLeftLong.cs" />
+    <Compile Include="Assets\Controllers\Character\Enemy\LilyMasked\LilyMaskedLeftVeryLong.cs" />
     <Compile Include="Assets\Controllers\Character\Enemy\LilyMasked\LilyMaskedRight.cs" />
     <Compile Include="Assets\Controllers\Character\Enemy\LilyMasked\LilyMaskedRightLong.cs" />
+    <Compile Include="Assets\Controllers\Character\Enemy\LilyMasked\LilyMaskedRightVeryLong.cs" />
     <Compile Include="Assets\Controllers\Character\NpcController.cs" />
     <Compile Include="Assets\Controllers\Character\Player\BetterJumping.cs" />
     <Compile Include="Assets\Controllers\Character\Player\GroundCheck.cs" />
@@ -119,6 +121,7 @@
     <Compile Include="Assets\Models\ThoiGian.cs" />
     <Compile Include="Assets\Scripts\EnemyEffect\EnemyDealDamageTrigger.cs" />
     <Compile Include="Assets\Scripts\EnemyEffect\EnemyKi.cs" />
+    <Compile Include="Assets\Scripts\EnemyEffect\EnemyKi2.cs" />
     <Compile Include="Assets\Scripts\IntroToTittle.cs" />
     <Compile Include="Assets\Scripts\LoadingText.cs" />
     <Compile Include="Assets\Scripts\MiniGame\ButtonRandomChar.cs" />
