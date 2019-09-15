@@ -10,7 +10,7 @@ public class LilyMaskedDown : MonoBehaviour
     private bool actionDown1 = true;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player" && actionDown1)
+        if (collision.tag == "Player" && actionDown1 && lilyMasked.GetComponent<EnemyController>().damagable && lilyMasked.GetComponent<EnemyController>().hoatDong)
         {
             StartCoroutine(kickDown());
         }

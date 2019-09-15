@@ -7,13 +7,13 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     //script duoc dung boi  main
-    public float speed = 150f, maxspeed = 3, jumpPow = 350f, defaultSpeed;
+    public float speed = 150f, maxspeed = 1, jumpPow = 350f, defaultSpeed;
     public bool grounded = true, faceright = false, doubleJump = false, attacktrigger1 = false, takeDam = false, death = false, attacktrigger2 = false, attacktrigger3 = false, attacktrigger4 = false;
     public Rigidbody2D r2;
     public Animator anim;
     public AudioClip Nhay;
     private AudioSource audioSource;
-    public bool diChuyen, traiPhai, lenXuong;
+    public bool diChuyen, traiPhai, lenXuong, dieuKhien = true;
     public THGameController tHGameController;
     public int hp;
     public Slider hpSlider;
@@ -24,17 +24,15 @@ public class PlayerController : MonoBehaviour
         r2 = gameObject.GetComponent<Rigidbody2D>();//Lay nhan vat
         anim = gameObject.GetComponent<Animator>();//Bien chua animation cho Player
         audioSource = gameObject.GetComponent<AudioSource>();//Chua am thanh de chay
-        //weapons = gameObject.GetComponent<WeaponsController>();
-        //tHGameController = GameObject.FindGameObjectWithTag("THGameController").GetComponent<THGameController>();
         audioSource.clip = Nhay;//am thanh nhay
         diChuyen = true;//co the di chuyen
         traiPhai = true;
         lenXuong = false;
         defaultSpeed = speed;//speed ban dau
-        hp = PlayerPrefs.GetInt("currentHp" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString());//chi so hp dua tren chi so str
+        hp = PlayerPrefs.GetInt("currentHp" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString());//chi so hp hien tai
         //thanh mau
         hpSlider.minValue = 0;
-        hpSlider.maxValue = PlayerPrefs.GetInt("maxHp" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString());
+        hpSlider.maxValue = PlayerPrefs.GetInt("maxHp" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()); ;
         hpSlider.value = hp;
     }
 
@@ -51,7 +49,16 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("Death", death);//animation khi death
         hpSlider.value = hp;//luon luon cap nhat thanh mau
 
-        if (Input.GetButtonDown("Jump") && diChuyen /*&& !tHGameController.isGameOver*/) // neu nut an xuong cua nguoi choi la Space va dang cho phep di chuyen (diChuyen = true)
+        if(!tHGameController.thBattle || tHGameController.isGameOver || tHGameController.isWin)//Kiem tra de cho phep dieu khien nhan vat
+        {
+            dieuKhien = false;
+        }
+        if(tHGameController.thBattle)
+        {
+            dieuKhien = true;
+        }
+
+        if (Input.GetButtonDown("Jump") && diChuyen && dieuKhien) // neu nut an xuong cua nguoi choi la Space va dang cho phep di chuyen (diChuyen = true)
         {
             gameObject.GetComponent<GroundCheck>();//Goi ham kiem tra xem Player co dang dung tren mat dat hay khong
             if (grounded)//neu dang dung tren mat dat
@@ -78,7 +85,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (diChuyen && traiPhai /*&& !tHGameController.isGameOver*/)//neu cho phep di chuyen (diChuyen = true)
+        if (diChuyen && traiPhai && dieuKhien)//neu cho phep di chuyen (diChuyen = true)
         {
             float h = Input.GetAxis("Horizontal");//Lay thong tin nut bam la nut mui ten (Phai: 1, Trai: -1)
             r2.AddForce(Vector2.right * speed * h);//Thay doi vi tri nhan vat dua vao speed va h
@@ -90,11 +97,11 @@ public class PlayerController : MonoBehaviour
                 r2.velocity = new Vector2(-maxspeed, r2.velocity.y);
 
 
-            if (h > 0 && !faceright /*&& weapons.attackable*/)//Neu h > 0 tuc la ben phai va player dang quay ve ben trai va chua trong trang thai tan cong
+            if (h > 0 && !faceright)//Neu h > 0 tuc la ben phai va player dang quay ve ben trai va chua trong trang thai tan cong
             {
                 Flip();//Goi ham dao chieu 
             }
-            if (h < 0 && faceright /*&& weapons.attackable*/)//Neu h < 0 tuc la ben trai va player dang quay ve ben phai va chua trong trang thai tan cong
+            if (h < 0 && faceright)//Neu h < 0 tuc la ben trai va player dang quay ve ben phai va chua trong trang thai tan cong
             {
                 Flip();
             }
@@ -112,7 +119,7 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKey(KeyCode.LeftShift) && h != 0)//khi nhan giu Shift se chay nhanh
             {
-                speed = defaultSpeed + 200f;
+                speed = defaultSpeed + 200f + (float)tHGameController.gc.stat.Dex * 5;
             }
             else
                 speed = defaultSpeed;
@@ -149,10 +156,6 @@ public class PlayerController : MonoBehaviour
             diChuyen = false;
             r2.AddForce(Vector2.right * 0);
             death = true;
-            tHGameController.gc.manHinh.fadeOut.SetActive(true);
-            yield return new WaitForSeconds(1.5f);
-            PlayerPrefs.SetInt("lastScene", SceneManager.GetActiveScene().buildIndex);//luu scene hien tai de load lai
-            SceneManager.LoadScene("GameOver", LoadSceneMode.Single);//chuyen sang scene gameover
             gameObject.GetComponent<SpriteRenderer>().color = Color.white;
         }
         else

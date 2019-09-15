@@ -63,12 +63,13 @@ public class EventController : MonoBehaviour
         gc.eve.textNum = 0;
         gc.eve.story++;
         LuuCotTruyen();
-        gc.menu.eventCanvas.SetActive(false);
+        gc.menu.hoiThoaiPanel.SetActive(false);
     }
 
     public IEnumerator ChuyenCanh(AudioClip nhacNen, GameObject background, bool activeMenuBackground, bool activeMenu, bool whiteScreen)//Chuyen khung hinh
     {
         enableNext = false;
+        gc.backGround.backgroundCanvas.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         if(whiteScreen)
             gc.manHinh.fadeOutWhite.SetActive(true);
@@ -141,7 +142,6 @@ public class EventController : MonoBehaviour
                 StartCoroutine(ChuyenCanh(gc.music.mysterial, gc.backGround.hospital, false, false, false));
                 break;
             case 1:
-                gc.menu.eventCanvas.SetActive(true);
                 gc.menu.hoiThoaiPanel.SetActive(true);
                 gc.eve.luaChon.SetActive(false);
                 gc.eve.facePanel.SetActive(false);              
@@ -212,9 +212,137 @@ public class EventController : MonoBehaviour
                 break;
             case 15:
                 gc.eve.textNum = 0;
-                SceneManager.LoadScene(3, LoadSceneMode.Single);
+                SceneManager.LoadScene(4, LoadSceneMode.Single);
                 gc.menu.hoiThoaiPanel.SetActive(false);
-                gc.menu.eventCanvas.SetActive(false);
+                break;
+            case 16:
+                gc.menu.hoiThoaiPanel.SetActive(true);
+                gc.eve.luaChon.SetActive(false);
+                gc.eve.facePanel.SetActive(true);
+                gc.menu.hoiThoaiPanel.transform.position = new Vector2(gc.menu.hoiThoaiPanel.transform.position.x, gc.menu.hoiThoaiPanel.transform.position.y + 400f);
+                npc.ThayDoiAvatar(npc.main.confused);
+                gc.eve.ten.text = gc.stat.Ten.ToString();
+                gc.eve.talk.text = "[!!]";
+                break;
+            case 17:
+                gc.eve.talk.text = "[What is that thing?]";
+                break;
+            case 18:
+                gc.eve.talk.text = "[A ghost?]";
+                break;
+            case 19:
+                gc.menu.hoiThoaiPanel.transform.position = new Vector2(gc.menu.hoiThoaiPanel.transform.position.x, gc.menu.hoiThoaiPanel.transform.position.y - 400f);
+                gc.menu.hoiThoaiPanel.SetActive(false);
+                enableNext = false;
+                gc.eve.textNum = 0;
+                gc.thgc.thBattle = true;
+                break;
+            case 20:
+                StartCoroutine(ChuyenCanh(null, gc.backGround.introStage, false, false, false));
+                gc.thgc.thCanvas.SetActive(false);
+                break;
+            case 21:
+                gc.menu.hoiThoaiPanel.SetActive(true);
+                gc.eve.luaChon.SetActive(false);
+                gc.eve.facePanel.SetActive(true);               
+                npc.ThayDoiAvatar(npc.main.normal);
+                gc.eve.ten.text = gc.stat.Ten.ToString();
+                gc.eve.talk.text = "[It disappears! Is that thing real? And what's more, the surroundings are strange!]";
+                break;
+            case 22:
+                gc.eve.facePanel.SetActive(false);
+                gc.eve.talk.text = "There is someone appears behind you.";
+                break;
+            case 23:
+                gc.eve.facePanel.SetActive(false);
+                gc.eve.ten.text = "???";
+                gc.eve.talk.text = "[You don't belong here! Leave now! I don't want to fight you!]";
+                break;
+            case 24:
+                gc.eve.facePanel.SetActive(true);
+                gc.eve.ten.text = gc.stat.Ten.ToString();
+                gc.eve.talk.text = "[What? Who are you?]";
+                break;
+            case 25:
+                gc.eve.facePanel.SetActive(false);
+                gc.eve.ten.text = "???";
+                gc.eve.talk.text = "[...]";
+                break;
+            case 26:
+                gc.eve.facePanel.SetActive(true);
+                gc.eve.ten.text = gc.stat.Ten.ToString();
+                gc.eve.talk.text = "[You are suspicious, Put down your weapons and come with me!]";
+                break;
+            case 27:
+                gc.eve.facePanel.SetActive(false);
+                gc.eve.ten.text = "???";
+                gc.eve.talk.text = "[Go away!]";
+                break;
+            case 28:
+                gc.eve.facePanel.SetActive(true);
+                npc.ThayDoiAvatar(npc.main.angry);
+                gc.eve.ten.text = gc.stat.Ten.ToString();
+                gc.eve.talk.text = "[You look familiar! Are you... that person?]";
+                break;
+            case 29:
+                gc.eve.facePanel.SetActive(false);
+                gc.eve.ten.text = "???";
+                gc.eve.talk.text = "[You leave me no choice but to knock you down!]";
+                break;
+            case 30:
+                gc.eve.facePanel.SetActive(true);
+                npc.ThayDoiAvatar(npc.main.angry);
+                gc.eve.ten.text = gc.stat.Ten.ToString();
+                gc.eve.talk.text = "[I won't let you do that!]";
+                break;
+            case 31:
+                StartCoroutine(ChuyenCanh(null, null, false, false, false));
+                break;
+            case 32:
+                gc.eve.textNum = 0;
+                SceneManager.LoadScene(6, LoadSceneMode.Single);
+                gc.menu.hoiThoaiPanel.SetActive(false);
+                gc.thgc.thCanvas.SetActive(true);
+                break;
+            case 33:
+                StartCoroutine(ChuyenCanh(gc.music.mysterial, gc.backGround.hospital, false, false, true));
+                gc.thgc.thCanvas.SetActive(false);
+                break;
+            case 34:
+                gc.menu.hoiThoaiPanel.SetActive(true);
+                gc.eve.luaChon.SetActive(false);
+                gc.eve.facePanel.SetActive(true);
+                npc.ThayDoiAvatar(npc.main.normal);
+                gc.eve.ten.text = gc.stat.Ten.ToString();
+                gc.eve.talk.text = "[And then I lost consciousness, that's all as I remember!]";
+                break;
+            case 35:
+                npc.ThayDoiAvatar(npc.main.confused);
+                gc.eve.talk.text = "[Is this real? Magic, ghost, elemental? I don't believe it! But... I have witnessed it with my own eyes, or is that my nightmar?]";
+                break;
+            case 36:
+                npc.ThayDoiAvatar(npc.gideon.normal);
+                gc.eve.ten.text = "Gildeon";
+                gc.eve.talk.text = "[I trust you, my friend! This could be something, but don't push yourself too hard, you are injured and need to rest, just leave it to me, okay?]";
+                break;
+            case 37:
+                npc.ThayDoiAvatar(npc.main.normal);
+                gc.eve.ten.text = gc.stat.Ten.ToString();
+                gc.eve.talk.text = "[OK, When I recover, we will continue to investigate!]";
+                break;
+            case 38:
+                npc.ThayDoiAvatar(npc.gideon.normal);
+                gc.eve.ten.text = "Gildeon";
+                gc.eve.talk.text = "[Right, Until then, rest well!]";
+                break;
+            case 39:
+                npc.ThayDoiAvatar(npc.main.normal);
+                gc.eve.ten.text = gc.stat.Ten.ToString();
+                gc.eve.talk.text = "[Bye!]";
+                break;
+            case 40:
+                Complete();
+                SceneManager.LoadScene(2, LoadSceneMode.Single);
                 break;
         }
     }

@@ -8,7 +8,7 @@ public class LilyMaskedRightVeryLong : MonoBehaviour
     private GameObject lilyMasked;
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && lilyMasked.GetComponent<EnemyController>().diChuyen)
         {
             lilyMasked.GetComponent<EnemyController>().move = 1;
         }

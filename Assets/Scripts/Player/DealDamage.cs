@@ -8,7 +8,7 @@ public class DealDamage : MonoBehaviour
     public int damageAmount;
     void Start()
     {
-        damageAmount = 1 + (int)PlayerPrefs.GetInt("str");//Sat thuong mac dinh
+        damageAmount = (int)PlayerPrefs.GetInt("str" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()) * 2;//Sat thuong mac dinh
     }
 
     #region Gay sat thuong cho ke dich

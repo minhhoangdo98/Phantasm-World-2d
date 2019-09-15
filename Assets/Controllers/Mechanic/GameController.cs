@@ -14,13 +14,14 @@ public class GameController : MonoBehaviour
     public ManHinh manHinh;
     public Event eve;
     public BackGround backGround;
-    public bool menuBackground = true;
+    public bool menuBackground = true, thPlay = false;
     public ThoiGian tg;
     public CalendarController calendar;
     private AudioSource sound;
     public AudioClip buttonSound;
     public Music music;
     public PlayerStat stat;
+    public THGameController thgc;
 
     private void Start()
     {
@@ -45,15 +46,19 @@ public class GameController : MonoBehaviour
         tg.dayNow = DateTime.Now.Day;
         tg.dayPrev = tg.dayNow - 1;
         yield return new WaitForSeconds(0.1f);
-        calendar = GameObject.FindGameObjectWithTag("Calendar").GetComponent<CalendarController>();
-        yield return new WaitForSeconds(0.1f);
+        if (!thPlay)
+        {
+            calendar = GameObject.FindGameObjectWithTag("Calendar").GetComponent<CalendarController>();
+            yield return new WaitForSeconds(0.1f);
+            GetSelectedDayInCal();
+        }
         music = GameObject.FindGameObjectWithTag("Music").GetComponent<Music>();
         yield return new WaitForSeconds(0.1f);
-        GetSelectedDayInCal();
         sound = model.GetComponent<AudioSource>();
         music.musicSound = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         yield return new WaitForSeconds(0.1f);
-        ThayDoiNhacNen(music.normalMusic);
+        if (!thPlay)
+            ThayDoiNhacNen(music.normalMusic);
         yield return new WaitForSeconds(0.1f);
         stat = model.GetComponent<PlayerStat>();
         stat.LoadStat(PlayerPrefs.GetInt("idTKCurrent"));
@@ -208,7 +213,7 @@ public class GameController : MonoBehaviour
                 }
                 else
                 {
-                    menu.mBPanel.GetComponent<MessBox>().textThongBao.text = "Chưa đủ điều kiện để mở sự kiện này. Hãy tăng chỉ số lên!!";
+                    menu.mBPanel.GetComponent<MessBox>().textThongBao.text = "You need to get strongger to open this event!";
                     menu.mBPanel.SetActive(true);
                 }
                 break;
@@ -221,6 +226,23 @@ public class GameController : MonoBehaviour
         
     }
 
+    #endregion
+
+    #region Debug
+    public void SetStoryUpOrDown(int add)
+    {
+        switch (add)
+        {
+            case 1:
+                eve.story++;
+                gameObject.GetComponent<EventController>().LuuCotTruyen();
+                break;
+            case 2:
+                eve.story--;
+                gameObject.GetComponent<EventController>().LuuCotTruyen();
+                break;
+        }
+    }
     #endregion
 
 }

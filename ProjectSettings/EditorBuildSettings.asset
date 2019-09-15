@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Views/School.unity
     guid: 760641f19aa0b83428a586fa8b53740c
+  - enabled: 1
+    path: Assets/Views/StageIntro.unity
+    guid: a372ccb40eb5fbc448f4bf34185adf95
+  - enabled: 1
+    path: Assets/Views/GameOver.unity
+    guid: 11b4aaec116d3a04f94f81511a79d9f7
+  - enabled: 1
+    path: Assets/Views/IntroBossFight.unity
+    guid: c99449114469c1245b0efbd4934d57f9
   m_configObjects: {}

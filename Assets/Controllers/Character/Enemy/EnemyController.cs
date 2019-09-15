@@ -5,13 +5,15 @@ using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
-    public int str, hp;
+    //Script duoc su dung cho moi enemy ke ca boss
+    public int str, hp, cash;
     public float speed = 150f, maxSpeed = 3, jumpPow = 350f, move = 0;
     public bool grounded = true, faceRight = true, attacktrigger1 = false, takeDam = false, death = false, attacktrigger2 = false, attacktrigger3 = false, attacktrigger4 = false, flipable = true, jumpable = true, backMove = false, invisible = false;
     public Rigidbody2D r2;
     public Animator anim;
     private AudioSource audioSource;
-    public bool diChuyen;
+    public bool diChuyen, damagable = true, hoatDong = true;
+    public THGameController thgc;
 
     void Start()
     {
@@ -23,6 +25,14 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
+        if (!thgc.thBattle)
+        {
+            hoatDong = false;
+        }
+        else
+        {
+            hoatDong = true;
+        }
         anim.SetBool("Grounded", grounded);//animation khi dung yen tren mat dat (grounded = true)
         anim.SetFloat("Speed", Mathf.Abs(r2.velocity.x)); // Mathf.abs: tra ve gia tri duong ; r2.velocity.x: toc do hien tai, animation khi chay
         anim.SetBool("AttackTrigger1", attacktrigger1);
@@ -36,7 +46,7 @@ public class EnemyController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (diChuyen)
+        if (diChuyen && hoatDong)
         {
             r2.AddForce(Vector2.right * speed * move);//di chuyen
             //Ham gioi han toc do di chuyen
@@ -80,14 +90,14 @@ public class EnemyController : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().flipX = !gameObject.GetComponent<SpriteRenderer>().flipX;
     }
 
-    public IEnumerator JumpDelay()
+    public IEnumerator JumpDelay()//Thoi gian delay cho lan nhay tiep theo
     {
         jumpable = false;
         yield return new WaitForSeconds(1.5f);
         jumpable = true;
     }
 
-    public IEnumerator BackStep(int mov)
+    public IEnumerator BackStep(int mov)//Lui ve sau
     {
         flipable = false;
         backMove = true;

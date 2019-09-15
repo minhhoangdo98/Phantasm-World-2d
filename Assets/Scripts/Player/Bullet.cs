@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        damageAmount = 9 + (int)PlayerPrefs.GetInt("str") / 2;//Sat thuong mac dinh
+        damageAmount = player.tHGameController.gc.stat.Str;//Sat thuong dua tren chi so Str
         if (player.faceright)//Xac dinh huong ban
             gameObject.GetComponent<Rigidbody2D>().velocity = transform.right * speed;
         else

@@ -11,7 +11,7 @@ public class LilyMaskedLeftLong : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            if (lilyMasked.GetComponent<EnemyController>().jumpable)
+            if (lilyMasked.GetComponent<EnemyController>().jumpable && lilyMasked.GetComponent<EnemyController>().diChuyen && lilyMasked.GetComponent<EnemyController>().hoatDong)
             {
                 lilyMasked.GetComponent<EnemyController>().r2.AddForce(Vector2.up * lilyMasked.GetComponent<EnemyController>().jumpPow);
                 StartCoroutine(lilyMasked.GetComponent<EnemyController>().JumpDelay());
@@ -37,7 +37,7 @@ public class LilyMaskedLeftLong : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            if (lilyMasked.GetComponent<EnemyController>().jumpable)
+            if (lilyMasked.GetComponent<EnemyController>().jumpable && lilyMasked.GetComponent<EnemyController>().diChuyen && lilyMasked.GetComponent<EnemyController>().hoatDong)
             {
                 lilyMasked.GetComponent<EnemyController>().r2.AddForce(Vector2.up * lilyMasked.GetComponent<EnemyController>().jumpPow);
                 StartCoroutine(lilyMasked.GetComponent<EnemyController>().JumpDelay());
