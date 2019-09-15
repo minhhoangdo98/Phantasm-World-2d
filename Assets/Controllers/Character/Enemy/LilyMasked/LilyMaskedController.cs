@@ -1,18 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LilyMaskedController : MonoBehaviour
 {
+    //script duoc su dung boi boss lilyMasked
     [SerializeField]
     private EnemyController lilyMasked;
     public bool skillKi = true;
     public GameObject ki, thunderBall;
+    [SerializeField]
+    private Slider hpSlider;
+
+    private void Start()
+    {
+        hpSlider.minValue = 0;
+        hpSlider.maxValue = lilyMasked.hp;
+        hpSlider.value = lilyMasked.hp;
+    }
 
     private void Update()
     {
-        if (skillKi)
+        if (skillKi && lilyMasked.damagable && lilyMasked.hoatDong)//su dung skill
             StartCoroutine(SkillKi1());
+        hpSlider.value = lilyMasked.hp;
     }
 
     IEnumerator SkillKi1()

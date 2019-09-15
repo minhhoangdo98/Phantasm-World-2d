@@ -6,8 +6,9 @@ public class SkillController : MonoBehaviour
 {
     //Script duoc dung boi object Weapon trong Player Main
     [SerializeField]
-    private GameObject weapon1, weapon2, weapon3, player, slash, bullet, weapon1combo1, weapon1combo2, slash2;
-    private int combo = 0;
+    private GameObject weapon1, weapon2, weapon3, player, slash, bullet, weapon1combo1, weapon1combo2, slash2, skill4Icon, skill5Icon, skill6Icon;
+    [SerializeField]
+    private int combo = 0, skill4Unlock = 0, skill5Unlock = 0, skill6Unlock = 0;
     private float timeStartCombo = 0;
     public bool attackable = true;
     private float delayTime;
@@ -15,18 +16,37 @@ public class SkillController : MonoBehaviour
     {
         player = gameObject;
         attackable = true;
-        delayTime = (float)PlayerPrefs.GetInt("intl") / 20;
+        delayTime = (float)PlayerPrefs.GetInt("dex" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()) / 20;
         if (delayTime >= 1)
             delayTime = 0.99f;
+        //lay gia tri skill unlock, =0 chua unlock, =1 da unlock
+        skill4Unlock = PlayerPrefs.GetInt("skill4Unlock");
+        skill5Unlock = PlayerPrefs.GetInt("skill5Unlock");
+        skill6Unlock = PlayerPrefs.GetInt("skill6Unlock");
     }
 
     void Update()
     {
-        if (player.GetComponent<PlayerController>().diChuyen)//Neu cho phep di chuyen
+        #region unlock Skill
+        if (skill4Unlock != 0)
+            skill4Icon.SetActive(true);
+        else
+            skill4Icon.SetActive(false);
+        if (skill5Unlock != 0)
+            skill5Icon.SetActive(true);
+        else
+            skill5Icon.SetActive(false);
+        if (skill6Unlock != 0)
+            skill6Icon.SetActive(true);
+        else
+            skill6Icon.SetActive(false);
+        #endregion
+
+        if (player.GetComponent<PlayerController>().diChuyen && player.GetComponent<PlayerController>().dieuKhien)//Neu cho phep di chuyen
         {
             if (Input.GetButtonDown("Fire1") && attackable)//khi bam Z hoac chuot trai se chem
             {
-                if (Time.timeSinceLevelLoad - timeStartCombo > 1.5f)//Neu khong bam danh trong thoi gian qua 1.5 giay thi combo tro lai tu dau
+                if (Time.timeSinceLevelLoad - timeStartCombo > 0.8f)//Neu khong bam danh trong thoi gian qua 1.5 giay thi combo tro lai tu dau
                     combo = 0;
                 switch (combo)//combo chem 3 lan khac nhau
                 {
@@ -60,7 +80,6 @@ public class SkillController : MonoBehaviour
     {
         timeStartCombo = Time.timeSinceLevelLoad;//cap nhat lai thoi gian dem delay combo
         attackable = false;
-
         player.GetComponent<PlayerController>().attacktrigger1 = true;
         yield return new WaitForSeconds(0.1f);
         weapon1.SetActive(true);
@@ -68,20 +87,17 @@ public class SkillController : MonoBehaviour
         {
             Vector3 pos = new Vector3(transform.position.x + 1, transform.position.y);//hieu ung chem vi tri la canh vu khi
             GameObject sla = Instantiate(slash, pos, Quaternion.identity, gameObject.transform) as GameObject;//tao hieu ung chem
-            yield return new WaitForSeconds(0.4f);
-            Destroy(sla);
+            Destroy(sla, 0.4f);
         }
         else//danh ben trai
         {
             Vector3 pos = new Vector3(transform.position.x - 1, transform.position.y);//hieu ung chem vi tri la canh vu khi
             GameObject sla = Instantiate(slash, pos, Quaternion.identity, gameObject.transform) as GameObject;//tao hieu ung chem
-            yield return new WaitForSeconds(0.4f);
-            Destroy(sla);
+            Destroy(sla, 0.4f);
         }
-        weapon1.SetActive(false);
         player.GetComponent<PlayerController>().attacktrigger1 = false;
-        yield return new WaitForSeconds(0.2f);
-
+        yield return new WaitForSeconds(0.3f);
+        weapon1.SetActive(false);
         combo = 1;
         attackable = true;
 
@@ -91,30 +107,27 @@ public class SkillController : MonoBehaviour
     {
         timeStartCombo = Time.timeSinceLevelLoad;//cap nhat lai thoi gian dem delay combo
         attackable = false;
-
         player.GetComponent<PlayerController>().attacktrigger4 = true;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         weapon1combo1.SetActive(true);
         if (player.GetComponent<PlayerController>().faceright)//danh ben phai
         {
             Vector3 pos = new Vector3(transform.position.x + 1, transform.position.y);//hieu ung chem vi tri la canh vu khi
             GameObject sla = Instantiate(slash2, pos, Quaternion.identity, gameObject.transform) as GameObject;//tao hieu ung chem
             sla.GetComponent<Transform>().Rotate(0, 0, 134);
-            yield return new WaitForSeconds(0.4f);
-            Destroy(sla);
+            Destroy(sla, 0.4f);
         }
         else//danh ben trai
         {
             Vector3 pos = new Vector3(transform.position.x - 1, transform.position.y);//hieu ung chem vi tri la canh vu khi
             GameObject sla = Instantiate(slash2, pos, Quaternion.identity, gameObject.transform) as GameObject;//tao hieu ung chem
             sla.GetComponent<Transform>().Rotate(0, 0, 134);
-            yield return new WaitForSeconds(0.4f);
-            Destroy(sla);
+            Destroy(sla, 0.4f);
         }
-        weapon1combo1.SetActive(false);
         player.GetComponent<PlayerController>().attacktrigger4 = false;
-        yield return new WaitForSeconds(0.2f);
-
+        yield return new WaitForSeconds(0.3f);
+        weapon1combo1.SetActive(false);
+        yield return new WaitForSeconds(0.1f);
         combo = 2;
         attackable = true;
 
@@ -123,28 +136,25 @@ public class SkillController : MonoBehaviour
     IEnumerator Attack1Combo2()//danh bang kiem
     {
         attackable = false;
-
         player.GetComponent<PlayerController>().attacktrigger3 = true;
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.1f);
         weapon1combo2.SetActive(true);
         if (player.GetComponent<PlayerController>().faceright)//danh ben phai
         {
             Vector3 pos = new Vector3(transform.position.x + 1, transform.position.y);//hieu ung chem vi tri la canh vu khi
             GameObject sla = Instantiate(slash, pos, Quaternion.identity, gameObject.transform) as GameObject;//tao hieu ung chem
-            yield return new WaitForSeconds(0.35f);
-            Destroy(sla);
+            Destroy(sla, 0.4f);
         }
         else//danh ben trai
         {
             Vector3 pos = new Vector3(transform.position.x - 1, transform.position.y);//hieu ung chem vi tri la canh vu khi
             GameObject sla = Instantiate(slash, pos, Quaternion.identity, gameObject.transform) as GameObject;//tao hieu ung chem
-            yield return new WaitForSeconds(0.35f);
-            Destroy(sla);
+            Destroy(sla, 0.4f);
         }
-        weapon1combo2.SetActive(false);
+        yield return new WaitForSeconds(0.3f);
         player.GetComponent<PlayerController>().attacktrigger3 = false;
+        weapon1combo2.SetActive(false);
         yield return new WaitForSeconds(1 - delayTime);
-
         combo = 0;
         attackable = true;
 

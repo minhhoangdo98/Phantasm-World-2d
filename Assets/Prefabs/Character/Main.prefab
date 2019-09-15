@@ -689,6 +689,7 @@ MonoBehaviour:
   diChuyen: 0
   traiPhai: 0
   lenXuong: 0
+  dieuKhien: 1
   tHGameController: {fileID: 0}
   hp: 0
   hpSlider: {fileID: 0}
@@ -713,6 +714,9 @@ MonoBehaviour:
   weapon1combo1: {fileID: 59705396}
   weapon1combo2: {fileID: 1978233784}
   slash2: {fileID: 5725540323543445350, guid: 51abeb7fbac43fc4294990ac4bfab536, type: 3}
+  skill4Icon: {fileID: 0}
+  skill5Icon: {fileID: 0}
+  skill6Icon: {fileID: 0}
   attackable: 1
 --- !u!1 &7808758759456336704
 GameObject:

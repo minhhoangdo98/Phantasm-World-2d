@@ -12,12 +12,12 @@ public class LilyMaskedRight : MonoBehaviour
         {
             StartCoroutine(lilyMasked.GetComponent<EnemyController>().BackStep(-1));
         }
-        if (collision.tag == "PlayerBullet" && lilyMasked.GetComponent<EnemyController>().diChuyen && lilyMasked.GetComponent<EnemyController>().jumpable)
+        if (collision.tag == "PlayerBullet" && lilyMasked.GetComponent<EnemyController>().diChuyen && lilyMasked.GetComponent<EnemyController>().jumpable && lilyMasked.GetComponent<EnemyController>().hoatDong)
         {
             lilyMasked.GetComponent<EnemyController>().r2.AddForce(Vector2.up * lilyMasked.GetComponent<EnemyController>().jumpPow);
             StartCoroutine(lilyMasked.GetComponent<EnemyController>().JumpDelay());
         }
-        if (collision.tag == "Tuong" && lilyMasked.GetComponent<EnemyController>().jumpable)
+        if (collision.tag == "Tuong" && lilyMasked.GetComponent<EnemyController>().jumpable && lilyMasked.GetComponent<EnemyController>().diChuyen && lilyMasked.GetComponent<EnemyController>().hoatDong)
         {
             lilyMasked.GetComponent<EnemyController>().r2.AddForce(Vector2.up * lilyMasked.GetComponent<EnemyController>().jumpPow * 1.5f);
             lilyMasked.GetComponent<EnemyController>().move = -1;

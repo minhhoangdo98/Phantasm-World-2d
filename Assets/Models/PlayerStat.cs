@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class PlayerStat : MonoBehaviour
 {
+    [SerializeField]
     private int str = 1, dex = 1, intl = 1, sta = 1, currentHp = 100, maxHp = 100, cash = 0, pistolDam = 1, shotgunDam = 1, knifeDam = 1;//strength, dex, intelligent, stamina,...
+    [SerializeField]
     private string ten = "";//ten nhan vat do nguoi choi nhap vao
     public int saved = 0;//bien dung de nhan biet da co file luu hay chua
     public Text tenText, strText, intlText, dexText, staText, HpText, cashText;
