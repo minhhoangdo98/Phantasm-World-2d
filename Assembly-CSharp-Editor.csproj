@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Content\RainDropEffect2\Editor\RainCameraControllerInspector.cs" />
     <Compile Include="Assets\Content\RainDropEffect2\Editor\SimpleRainInspector.cs" />
+    <Compile Include="Assets\Content\RainMaker\Editor\RainMakerEditor.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>D:/Games/Game Project/Phantasm World (2d mode)/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
@@ -291,6 +292,12 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:/FilePhanMem/Unity/2019.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>D:/FilePhanMem/Unity/2019.2.3f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>D:/FilePhanMem/Unity/2019.2.3f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>

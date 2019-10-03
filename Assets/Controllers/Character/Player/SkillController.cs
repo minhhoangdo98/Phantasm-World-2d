@@ -6,7 +6,7 @@ public class SkillController : MonoBehaviour
 {
     //Script duoc dung boi object Weapon trong Player Main
     [SerializeField]
-    private GameObject weapon1, weapon2, weapon3, player, slash, bullet, weapon1combo1, weapon1combo2, slash2, skill4Icon, skill5Icon, skill6Icon;
+    private GameObject weapon1, weapon2, weapon3, player, slash, bullet, weapon1combo1, weapon1combo2, slash2, skill4Icon, skill5Icon, skill6Icon, waterSkill, electricSkill, darkSkill;
     [SerializeField]
     private int combo = 0, skill4Unlock = 0, skill5Unlock = 0, skill6Unlock = 0;
     private float timeStartCombo = 0;
@@ -16,9 +16,9 @@ public class SkillController : MonoBehaviour
     {
         player = gameObject;
         attackable = true;
-        delayTime = (float)PlayerPrefs.GetInt("dex" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()) / 20;
-        if (delayTime >= 1)
-            delayTime = 0.99f;
+        delayTime = (float)PlayerPrefs.GetInt("dex" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()) / 40;
+        if (delayTime >= 0.5f)
+            delayTime = 0.49f;
         //lay gia tri skill unlock, =0 chua unlock, =1 da unlock
         skill4Unlock = PlayerPrefs.GetInt("skill4Unlock");
         skill5Unlock = PlayerPrefs.GetInt("skill5Unlock");
@@ -44,7 +44,7 @@ public class SkillController : MonoBehaviour
 
         if (player.GetComponent<PlayerController>().diChuyen && player.GetComponent<PlayerController>().dieuKhien)//Neu cho phep di chuyen
         {
-            if (Input.GetButtonDown("Fire1") && attackable)//khi bam Z hoac chuot trai se chem
+            if (Input.GetButtonDown("Fire1") && attackable && player.GetComponent<PlayerController>().sta >= 10)//khi bam Z hoac chuot trai se chem
             {
                 if (Time.timeSinceLevelLoad - timeStartCombo > 0.8f)//Neu khong bam danh trong thoi gian qua 1.5 giay thi combo tro lai tu dau
                     combo = 0;
@@ -60,16 +60,29 @@ public class SkillController : MonoBehaviour
                         StartCoroutine(Attack1Combo2());
                         break;
                 }
+                player.GetComponent<PlayerController>().sta -= 10;
             }
 
-            if (Input.GetButton("Fire2") && attackable)//khi bam X hoac chuot phai va co du dan se ban
+            if (Input.GetButton("Fire2") && attackable)//khi bam S 
             {
                 StartCoroutine(Attack2());
             }
 
-            if (Input.GetButton("Fire3") && attackable)//khi bam C hoac chuot giua se nhay lui
+            if (Input.GetButton("Fire3") && attackable)//khi bam D 
             {
                 StartCoroutine(Attack3());
+            }
+
+            if (Input.GetButton("Fire4") && attackable && player.GetComponent<PlayerController>().mana >= 7 && skill4Unlock==1)//khi bam z
+            {
+                StartCoroutine(UseWaterSkill());
+                player.GetComponent<PlayerController>().mana -= 7;
+            }
+
+            if (Input.GetButton("Fire5") && attackable && player.GetComponent<PlayerController>().mana >= 14 && skill5Unlock == 1)//khi bam z
+            {
+                StartCoroutine(UseElectricSkill());
+                player.GetComponent<PlayerController>().mana -= 14;
             }
         }
 
@@ -154,7 +167,7 @@ public class SkillController : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         player.GetComponent<PlayerController>().attacktrigger3 = false;
         weapon1combo2.SetActive(false);
-        yield return new WaitForSeconds(1 - delayTime);
+        yield return new WaitForSeconds(0.5f - delayTime);
         combo = 0;
         attackable = true;
 
@@ -183,7 +196,7 @@ public class SkillController : MonoBehaviour
         }       
         weapon2.SetActive(false);
         player.GetComponent<PlayerController>().attacktrigger2 = false;
-        yield return new WaitForSeconds(1 - delayTime);
+        yield return new WaitForSeconds(0.5f - delayTime);
 
         attackable = true;
 
@@ -219,8 +232,52 @@ public class SkillController : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         weapon3.SetActive(false);
         player.GetComponent<PlayerController>().attacktrigger2 = false;
-        yield return new WaitForSeconds(1 - delayTime);
+        yield return new WaitForSeconds(0.5f - delayTime);
 
+        attackable = true;
+    }
+    #endregion
+
+    #region Dung Skill
+    IEnumerator UseWaterSkill()
+    {
+        attackable = false;
+        player.GetComponent<PlayerController>().attacktrigger4 = true;
+        yield return new WaitForSeconds(0.2f);
+        if (player.GetComponent<PlayerController>().faceright)//danh ben phai
+        {
+            Vector3 pos = new Vector3(transform.position.x + 1.5f, transform.position.y);
+            GameObject bul = Instantiate(waterSkill, pos, Quaternion.identity) as GameObject;
+        }
+        else//danh ben trai
+        {
+            Vector3 pos = new Vector3(transform.position.x - 1.5f, transform.position.y);
+            GameObject bul = Instantiate(waterSkill, pos, Quaternion.identity) as GameObject;
+        }
+        yield return new WaitForSeconds(0.3f);
+        player.GetComponent<PlayerController>().attacktrigger4 = false;
+        yield return new WaitForSeconds(0.5f - delayTime);
+        attackable = true;
+    }
+
+    IEnumerator UseElectricSkill()
+    {
+        attackable = false;
+        player.GetComponent<PlayerController>().attacktrigger3 = true;
+        yield return new WaitForSeconds(0.2f);
+        if (player.GetComponent<PlayerController>().faceright)//danh ben phai
+        {
+            Vector3 pos = new Vector3(transform.position.x + 1.5f, transform.position.y);
+            GameObject bul = Instantiate(electricSkill, pos, Quaternion.identity) as GameObject;
+        }
+        else//danh ben trai
+        {
+            Vector3 pos = new Vector3(transform.position.x - 1.5f, transform.position.y);
+            GameObject bul = Instantiate(electricSkill, pos, Quaternion.identity) as GameObject;
+        }
+        yield return new WaitForSeconds(0.3f);
+        player.GetComponent<PlayerController>().attacktrigger3 = false;
+        yield return new WaitForSeconds(0.5f - delayTime);
         attackable = true;
     }
     #endregion

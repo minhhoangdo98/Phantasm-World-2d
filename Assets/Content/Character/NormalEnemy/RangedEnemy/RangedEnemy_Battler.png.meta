@@ -1,0 +1,1375 @@
+fileFormatVersion: 2
+guid: a5d393cf1a7cfe64f956acb16dccf234
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3463880587917376576
+    second: RangedEnemy_Battler_0
+  - first:
+      213: 7830949842411127872
+    second: RangedEnemy_Battler_1
+  - first:
+      213: -3392177959027980534
+    second: RangedEnemy_Battler_2
+  - first:
+      213: -1221227586173793899
+    second: RangedEnemy_Battler_3
+  - first:
+      213: 8424660463853264190
+    second: RangedEnemy_Battler_4
+  - first:
+      213: -4004988803082441098
+    second: RangedEnemy_Battler_5
+  - first:
+      213: 1353716299293002891
+    second: RangedEnemy_Battler_6
+  - first:
+      213: 3918435048501284643
+    second: RangedEnemy_Battler_7
+  - first:
+      213: -802164562469467150
+    second: RangedEnemy_Battler_8
+  - first:
+      213: -5160620258801986101
+    second: RangedEnemy_Battler_9
+  - first:
+      213: 7547325550705306407
+    second: RangedEnemy_Battler_10
+  - first:
+      213: 4865537082544004826
+    second: RangedEnemy_Battler_11
+  - first:
+      213: -4806518841370632423
+    second: RangedEnemy_Battler_12
+  - first:
+      213: -2341032019056418937
+    second: RangedEnemy_Battler_13
+  - first:
+      213: 944852113584435302
+    second: RangedEnemy_Battler_14
+  - first:
+      213: -4603507484611244098
+    second: RangedEnemy_Battler_15
+  - first:
+      213: -4377911777637943048
+    second: RangedEnemy_Battler_16
+  - first:
+      213: -7488273023784493504
+    second: RangedEnemy_Battler_17
+  - first:
+      213: -298800173874185570
+    second: RangedEnemy_Battler_18
+  - first:
+      213: 675287490713683942
+    second: RangedEnemy_Battler_19
+  - first:
+      213: -6903871186363361242
+    second: RangedEnemy_Battler_20
+  - first:
+      213: -575728941976828327
+    second: RangedEnemy_Battler_21
+  - first:
+      213: -8903557092650208981
+    second: RangedEnemy_Battler_22
+  - first:
+      213: 8035687661575076270
+    second: RangedEnemy_Battler_23
+  - first:
+      213: -8783328582361090662
+    second: RangedEnemy_Battler_24
+  - first:
+      213: -2651466424275438204
+    second: RangedEnemy_Battler_25
+  - first:
+      213: -4634196134030627976
+    second: RangedEnemy_Battler_26
+  - first:
+      213: 4225902632202789603
+    second: RangedEnemy_Battler_27
+  - first:
+      213: 1169318554424756752
+    second: RangedEnemy_Battler_28
+  - first:
+      213: -1087987492746873485
+    second: RangedEnemy_Battler_29
+  - first:
+      213: -4408064693975932045
+    second: RangedEnemy_Battler_30
+  - first:
+      213: 522365588569804878
+    second: RangedEnemy_Battler_31
+  - first:
+      213: 6288972171263079536
+    second: RangedEnemy_Battler_32
+  - first:
+      213: 1670450494721768228
+    second: RangedEnemy_Battler_33
+  - first:
+      213: -1885875498073721453
+    second: RangedEnemy_Battler_34
+  - first:
+      213: -3352638102050049575
+    second: RangedEnemy_Battler_35
+  - first:
+      213: -8263841766632207858
+    second: RangedEnemy_Battler_36
+  - first:
+      213: -3553549384528871399
+    second: RangedEnemy_Battler_37
+  - first:
+      213: 8231042454079004506
+    second: RangedEnemy_Battler_38
+  - first:
+      213: 7459043961708209786
+    second: RangedEnemy_Battler_39
+  - first:
+      213: 6369931688240135557
+    second: RangedEnemy_Battler_40
+  - first:
+      213: -8319792051602066563
+    second: RangedEnemy_Battler_41
+  - first:
+      213: -2271890735701286027
+    second: RangedEnemy_Battler_42
+  - first:
+      213: -2094475320864909020
+    second: RangedEnemy_Battler_43
+  - first:
+      213: -3416016440528646549
+    second: RangedEnemy_Battler_44
+  - first:
+      213: 4526756646461714670
+    second: RangedEnemy_Battler_45
+  - first:
+      213: -7570184648350937703
+    second: RangedEnemy_Battler_46
+  - first:
+      213: 1314855220309906189
+    second: RangedEnemy_Battler_47
+  - first:
+      213: -696180561397626882
+    second: RangedEnemy_Battler_48
+  - first:
+      213: -2231153130787013588
+    second: RangedEnemy_Battler_49
+  - first:
+      213: 3902999992746119635
+    second: RangedEnemy_Battler_50
+  - first:
+      213: 5941244950682082552
+    second: RangedEnemy_Battler_51
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 53
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 320
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2177a9ce21dd57744a1662f3d5c3a86e
+      internalID: 3463880587917376576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 320
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17361836e6e0584f8a555c2c922bf90
+      internalID: 7830949842411127872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 320
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7438ee66f3d48ab4a9dc612fa5abd930
+      internalID: -3392177959027980534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_3
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 320
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6676d7420df383445b7c7dbcb017a16f
+      internalID: -1221227586173793899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_4
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 320
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35718f7bee9b64643aa9ceb22e3e2651
+      internalID: 8424660463853264190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_5
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 320
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33a7697675ace94188a72f6ab5b83eb
+      internalID: -4004988803082441098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 320
+        width: 33
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05eda4c25d9576d448e3a76ed4edc016
+      internalID: 1353716299293002891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_7
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 320
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980d1fbf5af9bcd438f956d5dadb608b
+      internalID: 3918435048501284643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_8
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 320
+        width: 33
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77fcdfa015bbad4cac41c93638a8786
+      internalID: -802164562469467150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_9
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 258
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f742e2c7f7329e48bcd39916f0570b4
+      internalID: -5160620258801986101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_10
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 257
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44e3362754175d479d25f56769495af
+      internalID: 7547325550705306407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 256
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41e5db4cb2c1474dbd3691fd289b554
+      internalID: 4865537082544004826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_12
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 256
+        width: 43
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbffcdeb469551d43b4b0832a1eaaa94
+      internalID: -4806518841370632423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_13
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 256
+        width: 43
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fedf20df769ff5741b78cd8d064abe86
+      internalID: -2341032019056418937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_14
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 256
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a356faa872c947a458a75a03e9e31444
+      internalID: 944852113584435302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_15
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 256
+        width: 34
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f925d562fb97a4bbad28a675d304a7
+      internalID: -4603507484611244098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_16
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 256
+        width: 34
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8346d3f72cc239449a60dabeef0f029
+      internalID: -4377911777637943048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_17
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 256
+        width: 34
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64fe39a6d31dfe40ba8cb2bdc2e8e68
+      internalID: -7488273023784493504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_18
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 192
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6bfa12c0c9042f40b8db1d4cb2933bb
+      internalID: -298800173874185570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_19
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 192
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b1bdaa7cd51ca4b97f0952bd2adc7e
+      internalID: 675287490713683942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_20
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 192
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ecc115020e08844b990eac1669830b
+      internalID: -6903871186363361242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_21
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 192
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2849173015433a478369a2172bb7e66
+      internalID: -575728941976828327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_22
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 192
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8128862e5cc1834e9497db6c4133424
+      internalID: -8903557092650208981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_23
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 192
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006d5075a0a0c5d48ac004749a46fa78
+      internalID: 8035687661575076270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_24
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 192
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e797bc09eb59b343be40ae54b507eac
+      internalID: -8783328582361090662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_25
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 192
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a75545de93f69448a2137c29352cf6
+      internalID: -2651466424275438204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_26
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 192
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39b296da10cf6e4d8e9cd2dbcf8ecef
+      internalID: -4634196134030627976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_27
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 128
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a95b2de4cd0c624e9596dca5ccb17a1
+      internalID: 4225902632202789603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_28
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 128
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77e9697d59d40b44ac31a9086a7cfd4
+      internalID: 1169318554424756752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_29
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 128
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4ffe943d3d71243944f7e3c1fae24b
+      internalID: -1087987492746873485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_30
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 128
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b76d58cdb0e5a458d178c4e3401697
+      internalID: -4408064693975932045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_31
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 128
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7e9a1f65c69f7468de0da57b419440
+      internalID: 522365588569804878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_32
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 128
+        width: 36
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1677e2536f25114b9fd45a21ea81f68
+      internalID: 6288972171263079536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_33
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 128
+        width: 36
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820e224b468a9d04596a77c8e9141ea9
+      internalID: 1670450494721768228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_34
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 128
+        width: 36
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600c10d5febb8c24881b7685f682575b
+      internalID: -1885875498073721453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_35
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 128
+        width: 36
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6839792ebac394e9bf3a7beb941ee5
+      internalID: -3352638102050049575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_36
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 64
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7199c48116d1840a597f44a877b0cd
+      internalID: -8263841766632207858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_37
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 64
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4853b4e34d1bf4699b15cba4044dac
+      internalID: -3553549384528871399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_38
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 64
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187e5c9da4e7e9f44a3f630727deaf46
+      internalID: 8231042454079004506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_39
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 46
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18a66774f3681441b1fffefb66da8b9
+      internalID: 7459043961708209786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_40
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 46
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979fdca5a83834946987a98969119510
+      internalID: 6369931688240135557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_41
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 64
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6f930e83ae58a4498f70c3b10bb053
+      internalID: -8319792051602066563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_42
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 64
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e8a7bddb0c3dc4280bfe7e072df0f5
+      internalID: -2271890735701286027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_43
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 64
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b15e168f3bb8524392bb523f59e808c
+      internalID: -2094475320864909020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_44
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 64
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3166edc4e0960644b784868a872bd84
+      internalID: -3416016440528646549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_45
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 61
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e4ed5e2924b8149b04ef325f9c9ceb
+      internalID: 4526756646461714670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_46
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 61
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32b4324846d47e42afa2efd89790477
+      internalID: -7570184648350937703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_47
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 61
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0c28fd84806b545bcbe3f0e41fe15f
+      internalID: 1314855220309906189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_48
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 0
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b22b3ef71a187f418931625135336b2
+      internalID: -696180561397626882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_49
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8745be4ad8582ea4a843f8895d0c80e7
+      internalID: -2231153130787013588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_50
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 0
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13163cd33a81cb947bcee6021cdb4dca
+      internalID: 3902999992746119635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedEnemy_Battler_51
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 0
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1266fc6ef9efbd842abd1f53f4fdf519
+      internalID: 5941244950682082552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

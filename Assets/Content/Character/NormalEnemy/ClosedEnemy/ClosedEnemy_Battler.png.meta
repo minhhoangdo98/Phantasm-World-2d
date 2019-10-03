@@ -1,0 +1,1375 @@
+fileFormatVersion: 2
+guid: dc376446b1e64ae42a7eafb3146586c1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7973809154601025356
+    second: ClosedEnemy_Battler_0
+  - first:
+      213: 1070423015779625629
+    second: ClosedEnemy_Battler_1
+  - first:
+      213: 7023234464502585176
+    second: ClosedEnemy_Battler_2
+  - first:
+      213: 2681623754337543231
+    second: ClosedEnemy_Battler_3
+  - first:
+      213: -980776980525701413
+    second: ClosedEnemy_Battler_4
+  - first:
+      213: 2488184140303024682
+    second: ClosedEnemy_Battler_5
+  - first:
+      213: -7245035985168925695
+    second: ClosedEnemy_Battler_6
+  - first:
+      213: 2776194927511285552
+    second: ClosedEnemy_Battler_7
+  - first:
+      213: -9072860279151765623
+    second: ClosedEnemy_Battler_8
+  - first:
+      213: 2268771469294223772
+    second: ClosedEnemy_Battler_9
+  - first:
+      213: 3324726139088499287
+    second: ClosedEnemy_Battler_10
+  - first:
+      213: 540222381519099638
+    second: ClosedEnemy_Battler_11
+  - first:
+      213: -3542873505315049037
+    second: ClosedEnemy_Battler_12
+  - first:
+      213: -4873581781394286274
+    second: ClosedEnemy_Battler_13
+  - first:
+      213: -4722665863050851068
+    second: ClosedEnemy_Battler_14
+  - first:
+      213: -3835086590651232710
+    second: ClosedEnemy_Battler_15
+  - first:
+      213: -8791116569266679227
+    second: ClosedEnemy_Battler_16
+  - first:
+      213: 1321048376752863134
+    second: ClosedEnemy_Battler_17
+  - first:
+      213: 1072881608229916434
+    second: ClosedEnemy_Battler_18
+  - first:
+      213: -4025975253621077016
+    second: ClosedEnemy_Battler_19
+  - first:
+      213: -2107044376173999849
+    second: ClosedEnemy_Battler_20
+  - first:
+      213: -7408280223759988219
+    second: ClosedEnemy_Battler_21
+  - first:
+      213: -7026593756169122137
+    second: ClosedEnemy_Battler_22
+  - first:
+      213: 2600307986490034970
+    second: ClosedEnemy_Battler_23
+  - first:
+      213: -7721766035196359305
+    second: ClosedEnemy_Battler_24
+  - first:
+      213: 1798565183658511697
+    second: ClosedEnemy_Battler_25
+  - first:
+      213: 4366547008400406360
+    second: ClosedEnemy_Battler_26
+  - first:
+      213: -4096583495879374274
+    second: ClosedEnemy_Battler_27
+  - first:
+      213: -5989586298754526410
+    second: ClosedEnemy_Battler_28
+  - first:
+      213: -6186765848747503203
+    second: ClosedEnemy_Battler_29
+  - first:
+      213: 8059398216182439365
+    second: ClosedEnemy_Battler_30
+  - first:
+      213: 4161974368940348259
+    second: ClosedEnemy_Battler_31
+  - first:
+      213: -2372700823986192049
+    second: ClosedEnemy_Battler_32
+  - first:
+      213: -455278625985886639
+    second: ClosedEnemy_Battler_33
+  - first:
+      213: -4867468419831958317
+    second: ClosedEnemy_Battler_34
+  - first:
+      213: -5900074656325287105
+    second: ClosedEnemy_Battler_35
+  - first:
+      213: 5816334680120011645
+    second: ClosedEnemy_Battler_36
+  - first:
+      213: 1349628885008799838
+    second: ClosedEnemy_Battler_37
+  - first:
+      213: 7939741057223747895
+    second: ClosedEnemy_Battler_38
+  - first:
+      213: -1255754138784527112
+    second: ClosedEnemy_Battler_39
+  - first:
+      213: -1628730819880163245
+    second: ClosedEnemy_Battler_40
+  - first:
+      213: -5373177717077369307
+    second: ClosedEnemy_Battler_41
+  - first:
+      213: 4454253605357193782
+    second: ClosedEnemy_Battler_42
+  - first:
+      213: 7140116724940411056
+    second: ClosedEnemy_Battler_43
+  - first:
+      213: -8802128423157592708
+    second: ClosedEnemy_Battler_44
+  - first:
+      213: -8900188552808540323
+    second: ClosedEnemy_Battler_45
+  - first:
+      213: -446030773542464915
+    second: ClosedEnemy_Battler_46
+  - first:
+      213: -2907619314460668678
+    second: ClosedEnemy_Battler_47
+  - first:
+      213: -711623508251030417
+    second: ClosedEnemy_Battler_48
+  - first:
+      213: -866560979123065809
+    second: ClosedEnemy_Battler_49
+  - first:
+      213: -4002135702859370393
+    second: ClosedEnemy_Battler_50
+  - first:
+      213: -1150608625022902123
+    second: ClosedEnemy_Battler_51
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 53
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 320
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08f7056cba856348868333024baf1be
+      internalID: -7973809154601025356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 320
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23acbf843c54f5942a91c9c6d897f9da
+      internalID: 1070423015779625629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 320
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f42c4069097e3c4fbef15f82b62e03d
+      internalID: 7023234464502585176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_3
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 320
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2e0d96b78bb4840a93cf33609fc6d2
+      internalID: 2681623754337543231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_4
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 320
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5559ae6993b703543a1b44b4a082d568
+      internalID: -980776980525701413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_5
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 320
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfeb5622797bbf4d9f6097915fe30ce
+      internalID: 2488184140303024682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 320
+        width: 33
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed6a9109c164ca44bae3c7103836d89
+      internalID: -7245035985168925695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_7
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 320
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49168f3e269d6e54ab8c76d44f9a316f
+      internalID: 2776194927511285552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_8
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 320
+        width: 33
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f5f8eaac902394282e09c3710cc388
+      internalID: -9072860279151765623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_9
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 258
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1057b9962e0577f4bbc560ac1871cacd
+      internalID: 2268771469294223772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_10
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 257
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05370ce4e0412e140be85f791c516a76
+      internalID: 3324726139088499287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 256
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62c4ba0f2f6b5c499e2950c6a559675
+      internalID: 540222381519099638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_12
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 256
+        width: 43
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ad6ec7b9b107d428f1ffd0ff9f44f9
+      internalID: -3542873505315049037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_13
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 256
+        width: 43
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7a5335620c63744bd03f41827439ab
+      internalID: -4873581781394286274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_14
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 256
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace5ca546810c9548abc4f19dd26e711
+      internalID: -4722665863050851068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_15
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 256
+        width: 34
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5103b16cc3fc37943bdd4c736fe4fedb
+      internalID: -3835086590651232710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_16
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 256
+        width: 34
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b58ec2025bcaaea47b5859c9429aed36
+      internalID: -8791116569266679227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_17
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 256
+        width: 34
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad59f1a024e9edc41b72b14ed68945e0
+      internalID: 1321048376752863134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_18
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 192
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7bc34d99857334bb006671bc2bc70b
+      internalID: 1072881608229916434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_19
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 192
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a031b4f3720e7448ba064f2263acc25
+      internalID: -4025975253621077016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_20
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 192
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31fafb97ca252b44b8b94e4ee9a0208
+      internalID: -2107044376173999849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_21
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 192
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6051a9ea90316146bab62c6271e3897
+      internalID: -7408280223759988219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_22
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 192
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea13d3425f7af9048a9acba1948616c2
+      internalID: -7026593756169122137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_23
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 192
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3fb1734477d034eab29686a9784abc
+      internalID: 2600307986490034970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_24
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 192
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f9f0872962ff24fbd8106b49b8a58c
+      internalID: -7721766035196359305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_25
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 192
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ac5375ae9b182499f8e41ffc345d6b
+      internalID: 1798565183658511697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_26
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 192
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af814c32975d2c846a2d2ffaefb49541
+      internalID: 4366547008400406360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_27
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 128
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5c1e64981aa354490e3761c4da45d2
+      internalID: -4096583495879374274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_28
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 128
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156a2d1f0824abf45936ef49d7f90221
+      internalID: -5989586298754526410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_29
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 128
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5965d5f8cfb7e5e40a295744d7b5133c
+      internalID: -6186765848747503203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_30
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 128
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b890e03f33b5a744ac750b60b4438e8
+      internalID: 8059398216182439365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_31
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 128
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d89bfc28e6480041a53085a95665150
+      internalID: 4161974368940348259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_32
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 128
+        width: 36
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c95e57cca78a34db3813c167a9b6d1
+      internalID: -2372700823986192049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_33
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 128
+        width: 36
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1074b04eb47494439e82f343ca76e68
+      internalID: -455278625985886639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_34
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 128
+        width: 36
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a31dfe254017d6488c9a4ffbe2279da
+      internalID: -4867468419831958317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_35
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 128
+        width: 36
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77429cc30bcbd8146a97255314e63dc4
+      internalID: -5900074656325287105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_36
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 64
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05407012e9cd34344b76aec906f07262
+      internalID: 5816334680120011645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_37
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 64
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e5cd952e1e5dc4d8a2fd298d4b3764
+      internalID: 1349628885008799838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_38
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 64
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42ecdd0c591c994fa7f5ee585efc829
+      internalID: 7939741057223747895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_39
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 46
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ee44a58079d574a81c2303c2625320
+      internalID: -1255754138784527112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_40
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 46
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd686de85559fd74ab07f67cb8bbe908
+      internalID: -1628730819880163245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_41
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 64
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6a488419d110b438a0681603759896
+      internalID: -5373177717077369307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_42
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 64
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c104c680b2cfb924b80753ec2e07cc89
+      internalID: 4454253605357193782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_43
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 64
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acc29115b241224183e7dad15b4e273
+      internalID: 7140116724940411056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_44
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 64
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952148277e297bf45916cd96ad978c0c
+      internalID: -8802128423157592708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_45
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 61
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdca6c94c3d14484f851ae605c1de176
+      internalID: -8900188552808540323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_46
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 61
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63183e78b199b14a99aadaa92073d67
+      internalID: -446030773542464915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_47
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 61
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c83e084ea4b78448e51c1291d730b2
+      internalID: -2907619314460668678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_48
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 0
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41aa62e45f9f09b42b94f2215b1ea3f7
+      internalID: -711623508251030417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_49
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb941e6535c5ce641945f079bf0c305f
+      internalID: -866560979123065809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_50
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 0
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6563b094cb1fd2941ae2b8461b230660
+      internalID: -4002135702859370393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedEnemy_Battler_51
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 0
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261533a8e7e2ef647b1924c45e12ce85
+      internalID: -1150608625022902123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

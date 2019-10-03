@@ -63,10 +63,10 @@ public class PlayerStat : MonoBehaviour
             Str = 1;
             Intl = 1;
             Dex = 1;
-            Sta = 1;
-            cash = 1;
-            CurrentHp = 100;
-            MaxHp = 100;
+            Sta = 100;
+            cash = 0;
+            MaxHp = 90 + Str * 10;
+            CurrentHp = MaxHp;
             KnifeDam = 1;
             PistolDam = 1;
             ShotgunDam = 1;

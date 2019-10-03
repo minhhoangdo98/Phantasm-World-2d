@@ -23,6 +23,8 @@ TagManager:
   - Boss
   - ButtonTextRandom
   - Tuong
+  - Task
+  - Rain
   layers:
   - Default
   - TransparentFX

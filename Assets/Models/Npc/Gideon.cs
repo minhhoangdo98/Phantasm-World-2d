@@ -5,5 +5,5 @@ using UnityEngine.UI;
 
 public class Gideon : MonoBehaviour
 {
-    public Texture normal, regret, smile, worry;
+    public Texture normal, portraitNormal, portraitSmile, portraitTalk, handUp, handUpSmile, handUpTalk, handUpWorry, scare, scareCloseEye, serious, seriousTalk, shy, shyCloseEye, shySmile;
 }

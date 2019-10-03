@@ -15,9 +15,4 @@ public class Gameover : MonoBehaviour
         SceneManager.LoadScene(0, LoadSceneMode.Single);//Khi bam button Dang xuat thi quay ve man hinh dang nhap
     }
 
-    void Update()
-    {
-        if (Input.GetButtonDown("Submit"))
-            SceneManager.LoadScene(PlayerPrefs.GetInt("lastScene"), LoadSceneMode.Single);
-    }
 }

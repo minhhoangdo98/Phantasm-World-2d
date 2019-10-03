@@ -25,6 +25,7 @@ public class NormalEnemy : MonoBehaviour
             {
                 ec.damagable = false;
                 Vector3 pos = new Vector3(collision.transform.position.x, collision.transform.position.y);
+                StartCoroutine(AttackClose());
                 GameObject ae = Instantiate(attackEffect, pos, Quaternion.identity, collision.transform) as GameObject;//tao hieu ung danh trung nguoi choi
                 Destroy(ae, 0.5f);
                 StartCoroutine(StopMove(false));//Khi tan cong ke dich phai dung lai trong khoang thoi gian ngan
@@ -34,9 +35,17 @@ public class NormalEnemy : MonoBehaviour
         }
     }
 
+    IEnumerator AttackClose()
+    {
+        ec.attacktrigger1 = true;//trigger cho animation attack1
+        yield return new WaitForSeconds(0.5f);
+        ec.attacktrigger1 = false;
+    }
+
     public IEnumerator RangedAttack()
     {
         ec.damagable = false;
+        ec.attacktrigger2 = true;
         if (ec.faceRight)//danh ben phai
         {
             if (!gun.GetComponent<SpriteRenderer>().flipX)//Neu vu khi dang quay ve ben trai thi lat nguoc lai
@@ -66,8 +75,8 @@ public class NormalEnemy : MonoBehaviour
             Destroy(bul, 1.8f);
         }
         gun.SetActive(false);
-        yield return new WaitForSeconds(0.8f);
-
+        ec.attacktrigger2 = false;
+        yield return new WaitForSeconds(stopMoveTime);
         ec.damagable = true;
     }
     #endregion
@@ -78,10 +87,14 @@ public class NormalEnemy : MonoBehaviour
         ec.hp -= damageAmount;
         if (gameObject.CompareTag("Enemy"))
             EnemyKBack(eKbackPower);//Day lui ke dich, ngoai tru boss
-        if (ec.hp <= 0)
+        if (ec.hp <= 0 && !ec.death)
         {
-            ec.thgc.gc.stat.AddStat(3, ec.cash);
-            Destroy(gameObject, 0.5f);
+            ec.diChuyen = false;
+            ec.damagable = false;
+            ec.death = true;
+            ec.thgc.gc.stat.AddStat(4, ec.cash);
+            Destroy(gameObject, 1);
+            return;
         }
         StartCoroutine(StopMove(true));
 

@@ -56,11 +56,11 @@ public class TaiKhoanController : MonoBehaviour
         {
             PlayerPrefs.SetInt("saved" + "tk" + i.ToString(), 0);
             PlayerPrefs.SetInt("story" + "tk" + i.ToString(), 0);
+            PlayerPrefs.SetInt("demCV" + "tk" + i.ToString(), 0);
+            PlayerPrefs.SetInt("demPlan" + "tk" + i.ToString(), 0);
         }
         demTK = 0;
         PlayerPrefs.SetInt("demTK", demTK);
-        PlayerPrefs.SetInt("demCV", 0);
-        PlayerPrefs.SetInt("demCH", 0);
         MBPanel.GetComponent<MessBox>().textThongBao.text = "Deleted! ";
         MBPanel.SetActive(true);
     }
