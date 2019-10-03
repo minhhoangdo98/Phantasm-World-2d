@@ -8,7 +8,7 @@ public class EnemyController : MonoBehaviour
     //Script duoc su dung cho moi enemy ke ca boss
     public int str, hp, cash;
     public float speed = 150f, maxSpeed = 3, jumpPow = 350f, move = 0;
-    public bool grounded = true, faceRight = true, attacktrigger1 = false, takeDam = false, death = false, attacktrigger2 = false, attacktrigger3 = false, attacktrigger4 = false, flipable = true, jumpable = true, backMove = false, invisible = false;
+    public bool grounded = true, faceRight = true, attacktrigger1 = false, takeDam = false, death = false, attacktrigger2 = false, flipable = true, jumpable = true, backMove = false, invisible = false;
     public Rigidbody2D r2;
     public Animator anim;
     private AudioSource audioSource;
@@ -37,8 +37,6 @@ public class EnemyController : MonoBehaviour
         anim.SetFloat("Speed", Mathf.Abs(r2.velocity.x)); // Mathf.abs: tra ve gia tri duong ; r2.velocity.x: toc do hien tai, animation khi chay
         anim.SetBool("AttackTrigger1", attacktrigger1);
         anim.SetBool("AttackTrigger2", attacktrigger2);
-        anim.SetBool("AttackTrigger3", attacktrigger3);
-        anim.SetBool("AttackTrigger4", attacktrigger4);
         anim.SetBool("TakeDamage", takeDam);//animation khi nhan sat thuong
         anim.SetBool("Death", death);//animation khi death
 

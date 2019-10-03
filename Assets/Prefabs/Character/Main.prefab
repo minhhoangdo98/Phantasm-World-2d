@@ -671,9 +671,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 150
-  maxspeed: 3
+  maxspeed: 1
   jumpPow: 350
   defaultSpeed: 0
+  sta: 0
   grounded: 1
   faceright: 1
   doubleJump: 0
@@ -692,7 +693,10 @@ MonoBehaviour:
   dieuKhien: 1
   tHGameController: {fileID: 0}
   hp: 0
+  mana: 0
   hpSlider: {fileID: 0}
+  staSlider: {fileID: 0}
+  manaSlider: {fileID: 0}
 --- !u!114 &7808758759044503599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,6 +721,15 @@ MonoBehaviour:
   skill4Icon: {fileID: 0}
   skill5Icon: {fileID: 0}
   skill6Icon: {fileID: 0}
+  waterSkill: {fileID: 5206427701434402879, guid: fadb418b4c8c37d44a13b4806c9ab218,
+    type: 3}
+  electricSkill: {fileID: 838970213229435774, guid: 07c65dd08a7a09a4489f484aab355b24,
+    type: 3}
+  darkSkill: {fileID: 0}
+  combo: 0
+  skill4Unlock: 0
+  skill5Unlock: 0
+  skill6Unlock: 0
   attackable: 1
 --- !u!1 &7808758759456336704
 GameObject:

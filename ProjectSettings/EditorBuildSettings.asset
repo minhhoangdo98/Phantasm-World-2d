@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Views/IntroBossFight.unity
     guid: c99449114469c1245b0efbd4934d57f9
+  - enabled: 1
+    path: Assets/Views/ManChoi1.unity
+    guid: 5905974f50fe8974896820445c47a987
   m_configObjects: {}

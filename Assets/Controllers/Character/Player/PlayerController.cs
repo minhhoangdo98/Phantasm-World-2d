@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     //script duoc dung boi  main
-    public float speed = 150f, maxspeed = 1, jumpPow = 350f, defaultSpeed;
+    public float speed = 150f, maxspeed = 1, jumpPow = 350f, defaultSpeed, sta;
     public bool grounded = true, faceright = false, doubleJump = false, attacktrigger1 = false, takeDam = false, death = false, attacktrigger2 = false, attacktrigger3 = false, attacktrigger4 = false;
     public Rigidbody2D r2;
     public Animator anim;
@@ -15,8 +15,8 @@ public class PlayerController : MonoBehaviour
     private AudioSource audioSource;
     public bool diChuyen, traiPhai, lenXuong, dieuKhien = true;
     public THGameController tHGameController;
-    public int hp;
-    public Slider hpSlider;
+    public int hp, mana;
+    public Slider hpSlider, staSlider, manaSlider;
 
 
     void Start()
@@ -30,10 +30,23 @@ public class PlayerController : MonoBehaviour
         lenXuong = false;
         defaultSpeed = speed;//speed ban dau
         hp = PlayerPrefs.GetInt("currentHp" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString());//chi so hp hien tai
+        mana = PlayerPrefs.GetInt("intl" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()) * 10 + 90;
+        sta = PlayerPrefs.GetInt("sta" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString());
+
         //thanh mau
         hpSlider.minValue = 0;
-        hpSlider.maxValue = PlayerPrefs.GetInt("maxHp" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()); ;
+        hpSlider.maxValue = PlayerPrefs.GetInt("maxHp" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString());
         hpSlider.value = hp;
+
+        //Thanh mana
+        manaSlider.minValue = 0;
+        manaSlider.maxValue = mana;
+        manaSlider.value = mana;
+
+        //Thanh stamina
+        staSlider.minValue = 0;
+        staSlider.maxValue = sta;
+        staSlider.value = sta;
     }
 
 
@@ -48,8 +61,10 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("TakeDamage", takeDam);//animation khi nhan sat thuong
         anim.SetBool("Death", death);//animation khi death
         hpSlider.value = hp;//luon luon cap nhat thanh mau
+        manaSlider.value = mana;
+        staSlider.value = sta;
 
-        if(!tHGameController.thBattle || tHGameController.isGameOver || tHGameController.isWin)//Kiem tra de cho phep dieu khien nhan vat
+        if (!tHGameController.thBattle || tHGameController.isGameOver || tHGameController.isWin)//Kiem tra de cho phep dieu khien nhan vat
         {
             dieuKhien = false;
         }
@@ -85,7 +100,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (diChuyen && traiPhai && dieuKhien)//neu cho phep di chuyen (diChuyen = true)
+        if (diChuyen && dieuKhien)//neu cho phep di chuyen (diChuyen = true)
         {
             float h = Input.GetAxis("Horizontal");//Lay thong tin nut bam la nut mui ten (Phai: 1, Trai: -1)
             r2.AddForce(Vector2.right * speed * h);//Thay doi vi tri nhan vat dua vao speed va h
@@ -95,6 +110,17 @@ public class PlayerController : MonoBehaviour
                 r2.velocity = new Vector2(maxspeed, r2.velocity.y);
             if (r2.velocity.x < -maxspeed)// Gioi han toc do di ve ben trai
                 r2.velocity = new Vector2(-maxspeed, r2.velocity.y);
+
+            if (hp > PlayerPrefs.GetInt("maxHp" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()))
+                hp = PlayerPrefs.GetInt("maxHp" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString());
+
+            if (mana > PlayerPrefs.GetInt("intl" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()) * 10 + 90)
+                mana = PlayerPrefs.GetInt("intl" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()) * 10 + 90;
+
+            if (sta < PlayerPrefs.GetInt("sta" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()))
+                sta += PlayerPrefs.GetInt("dex" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()) * 10 * Time.deltaTime;
+            if (sta > PlayerPrefs.GetInt("sta" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()))
+                sta = PlayerPrefs.GetInt("sta" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString());
 
 
             if (h > 0 && !faceright)//Neu h > 0 tuc la ben phai va player dang quay ve ben trai va chua trong trang thai tan cong
@@ -117,8 +143,9 @@ public class PlayerController : MonoBehaviour
             }
 
 
-            if (Input.GetKey(KeyCode.LeftShift) && h != 0)//khi nhan giu Shift se chay nhanh
+            if (Input.GetKey(KeyCode.LeftShift) && h != 0 && sta >= 0.5f)//khi nhan giu Shift se chay nhanh
             {
+                sta -= 0.5f;
                 speed = defaultSpeed + 200f + (float)tHGameController.gc.stat.Dex * 5;
             }
             else

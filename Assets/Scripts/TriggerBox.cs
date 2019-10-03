@@ -9,9 +9,12 @@ public class TriggerBox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        gc.GetComponent<GameController>().thgc.thBattle = false;
-        gc.GetComponent<GameController>().eve.textNum = 16;
-        gc.GetComponent<EventController>().PlayStory();
-        Destroy(gameObject);
+        if (gc.GetComponent<GameController>().thgc.thBattle && collision.CompareTag("Player"))
+        {
+            gc.GetComponent<GameController>().thgc.thBattle = false;
+            gc.GetComponent<GameController>().eve.textNum = 16;
+            gc.GetComponent<EventController>().PlayStory();
+            Destroy(gameObject);
+        }
     }
 }

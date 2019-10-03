@@ -7,7 +7,7 @@ public class THGameController : MonoBehaviour
 {
     public bool isGameOver = false, isWin = false, thBattle;
     public GameController gc;
-    public GameObject player;
+    public GameObject player, clearText;
     public int gameType, time;//0: kill all enemy, 1:run to finish point, 2: survival in ammount of time
     [SerializeField]
     private GameObject allEnemy;
@@ -21,12 +21,27 @@ public class THGameController : MonoBehaviour
 
     IEnumerator KiemTraScene()//cho load xong het thi moi load cai nay
     {
-        yield return new WaitForSeconds(1.3f);
+        yield return new WaitForSeconds(3);
         switch (gc.eve.story)//kiem tra story
         {
             case 0:
-                BatDauManChoiTuDau(4, gc.music.level1);//Kiem tra scene hien tai va thay doi nhac nen tuong ung
-                BatDauManChoiTuDau(6, gc.music.chalenge);
+                BatDauManChoiTuDau(4, gc.music.level0);//Kiem tra scene hien tai va thay doi nhac nen tuong ung
+                BatDauManChoiTuDau(6, gc.music.challenge);
+                break;
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+            case 11:
+            case 12:
+            case 13:
+                BatDauManChoiTuDau(7, gc.music.level1);
                 break;
         }
     }
@@ -50,6 +65,21 @@ public class THGameController : MonoBehaviour
                             case 0:
                                 gc.GetComponent<GameController>().eve.textNum = 20;
                                 gc.GetComponent<EventController>().PlayStory();
+                                break;
+                            case 1:
+                            case 2:
+                            case 3:
+                            case 4:
+                            case 5:
+                            case 6:
+                            case 7:
+                            case 8:
+                            case 9:
+                            case 10:
+                            case 11:
+                            case 12:
+                            case 13:
+                                StartCoroutine(Clear(2, 1000));
                                 break;
                         }
                     }
@@ -95,5 +125,16 @@ public class THGameController : MonoBehaviour
             if (nhacNenChoManChoi != null)
                 gc.ThayDoiNhacNen(nhacNenChoManChoi);
         }
+    }
+
+    private IEnumerator Clear(int sceneToLoad, int cashEarn)
+    {
+        yield return new WaitForSeconds(1f);
+        clearText.SetActive(true);
+        gc.stat.AddStat(4, cashEarn);
+        yield return new WaitForSeconds(2f);
+        StartCoroutine(gc.FadeOutScreenblack());
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(sceneToLoad, LoadSceneMode.Single);
     }
 }

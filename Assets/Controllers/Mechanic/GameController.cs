@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -38,7 +38,6 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         eve = model.GetComponent<Event>();
         eve.textNum = 0;
-        menu.menuList.SetActive(false);
         yield return new WaitForSeconds(0.1f);
         backGround = model.GetComponent<BackGround>();
         yield return new WaitForSeconds(0.1f);
@@ -89,7 +88,7 @@ public class GameController : MonoBehaviour
                 {
                     backGround.sang.SetActive(true);
                     backGround.toi.SetActive(false);
-                    menu.menuButton[18].SetActive(false);
+                    menu.menuButton[19].SetActive(false);
                 }
             }           
             if ((int)DateTime.Now.Hour >= 19 && (int)DateTime.Now.Hour <= 23)
@@ -98,7 +97,7 @@ public class GameController : MonoBehaviour
                 {
                     backGround.sang.SetActive(false);
                     backGround.toi.SetActive(true);
-                    menu.menuButton[18].SetActive(true);
+                    menu.menuButton[19].SetActive(true);
                 }
             }
         }
@@ -111,6 +110,7 @@ public class GameController : MonoBehaviour
 
     public void AnHienMenu(GameObject subMenu)
     {
+        menu.TatToanBoMidMenu(subMenu);
         subMenu.SetActive(!subMenu.activeInHierarchy);
         sound.clip = buttonSound;
         sound.Play();
@@ -123,11 +123,24 @@ public class GameController : MonoBehaviour
             if (item.GetComponentInChildren<Text>().text == tg.dayNow.ToString() && calendar._monthNumText.text == DateTime.Now.Month.ToString() && calendar._yearNumText.text == DateTime.Now.Year.ToString())
             {
                 item.GetComponent<Image>().color = Color.yellow;
-                break;
             }
             else
-                item.GetComponent<Image>().color = Color.white;
+                GetDeadLineDay(item);
+                
         }
+    }
+
+    public void GetDeadLineDay(GameObject item)
+    {
+        for (int i = 1; i <= PlayerPrefs.GetInt("demPlan" + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()); i++)
+        {
+            if (item.GetComponentInChildren<Text>().text == PlayerPrefs.GetInt("deadlineDay" + i.ToString() + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()).ToString() && calendar._monthNumText.text == PlayerPrefs.GetInt("deadlineMonth" + i.ToString() + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()).ToString() && calendar._yearNumText.text == PlayerPrefs.GetInt("deadlineYear" + i.ToString() + "tk" + PlayerPrefs.GetInt("idTKCurrent").ToString()).ToString())
+            {
+                item.GetComponent<Image>().color = Color.green;
+                return;
+            }
+        }
+        item.GetComponent<Image>().color = Color.white;
     }
 
     public void OnDateItemClick()
@@ -197,7 +210,36 @@ public class GameController : MonoBehaviour
     #endregion
 
     #region SuKien 
-    public void BtnEvent() //nut su kien
+    public void MenuIconClicked()//kiem tra story de unlock cac chuc nang
+    {
+        switch (eve.story)
+        {
+            case 0://neu phan mo dau thi lock tat ca chuc nang ngoai tru cot truyen
+                for(int i = 12; i < menu.menuButton.Length; i++)
+                {
+                    menu.menuButton[i].SetActive(true);
+                }
+                menu.menuButton[13].SetActive(false);
+                break;
+            case 1:
+                menu.menuButton[12].SetActive(true);
+                for (int i = 13; i < 19; i++)
+                {
+                    menu.menuButton[i].SetActive(false);
+                }
+                menu.menuButton[20].SetActive(true);
+                break;
+            case 2:
+                for (int i = 12; i < 19; i++)
+                {
+                    menu.menuButton[i].SetActive(false);
+                }
+                menu.menuButton[20].SetActive(true);
+                break;
+        }
+    }
+
+    public void BtnEvent()
     {
         switch (eve.story)
         {
@@ -206,16 +248,12 @@ public class GameController : MonoBehaviour
                 gameObject.GetComponent<EventController>().PlayStory();
                 break;
             case 1:
-                if (stat.Str >= 2 && stat.Intl >= 2)
-                {
-                    eve.textNum = 0;
-                    gameObject.GetComponent<EventController>().PlayStory();
-                }
-                else
-                {
-                    menu.mBPanel.GetComponent<MessBox>().textThongBao.text = "You need to get strongger to open this event!";
-                    menu.mBPanel.SetActive(true);
-                }
+                eve.textNum = 0;
+                gameObject.GetComponent<EventController>().PlayStory();
+                break;
+            case 2:
+                eve.textNum = 0;
+                gameObject.GetComponent<EventController>().PlayStory();
                 break;
                 
         }
@@ -229,19 +267,17 @@ public class GameController : MonoBehaviour
     #endregion
 
     #region Debug
-    public void SetStoryUpOrDown(int add)
+    public void SetStoryUpOrDown(int num)
     {
-        switch (add)
-        {
-            case 1:
-                eve.story++;
-                gameObject.GetComponent<EventController>().LuuCotTruyen();
-                break;
-            case 2:
-                eve.story--;
-                gameObject.GetComponent<EventController>().LuuCotTruyen();
-                break;
-        }
+        eve.story = num;
+        gameObject.GetComponent<EventController>().LuuCotTruyen();
+    }
+
+    public void UnlockAllSkill()
+    {
+        PlayerPrefs.SetInt("skill4Unlock", 1);
+        PlayerPrefs.SetInt("skill5Unlock", 1);
+        PlayerPrefs.SetInt("skill6Unlock", 1);
     }
     #endregion
 

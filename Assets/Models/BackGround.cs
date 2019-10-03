@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BackGround : MonoBehaviour
 {
-    public GameObject backgroundCanvas, sang, toi, myRoomSang, myRoomToi, hospital, introStage;
+    public GameObject backgroundCanvas, sang, toi, myRoomSang, myRoomToi, hospital, introStage, school, classRoom;
 
     public void TatToanBoBackGround()
     {
@@ -14,5 +14,7 @@ public class BackGround : MonoBehaviour
         myRoomSang.SetActive(false);
         myRoomToi.SetActive(false);
         introStage.SetActive(false);
+        school.SetActive(false);
+        classRoom.SetActive(false);
     }
 }

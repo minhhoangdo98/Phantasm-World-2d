@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Lily : MonoBehaviour
 {
-    public Texture normal, shy, smileOpenEye, smileOneEye, smileBothEye, doubt, sad, sadSmile, smileYan, ghen;
+    public Texture normal, portrait1, portrait2, portrait3;
 }

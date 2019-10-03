@@ -28,9 +28,9 @@ public class Item : MonoBehaviour
                 this.cost = 0;
                 break;
             case 1:
-                this.itemName = "First aid kit";
-                this.itemDescription = "Restore 100 health";
-                this.cost = 100;
+                this.itemName = "Hp Up";
+                this.itemDescription = "Increase health";
+                this.cost = 500;
                 break;
             case 2:
                 this.itemName = "Knife Up";
@@ -91,10 +91,11 @@ public class Item : MonoBehaviour
         if (stat.Cash >= this.cost)
         {
             useSound.Play();
+            //Dung item
             switch (this.id)
             {
-                case 1://Dùng first aid kit hoi mau
-                    stat.AddStat(5, 100);
+                case 1:
+                    stat.AddStat(6, 10);
                     break;
                 case 2:
                     stat.AddStat(7, 1);
@@ -115,7 +116,7 @@ public class Item : MonoBehaviour
                     stat.AddStat(2, 1);
                     break;
                 case 8:
-                    stat.AddStat(3, 1);
+                    stat.AddStat(3, 10);
                     break;
             }
             stat.AddStat(4, -this.cost);
